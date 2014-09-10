@@ -1,12 +1,8 @@
-# Photographer.io
+# iYuntoo
 
-* [Photographer.io](https://www.photographer.io) is a photo sharing community.
-* Created by Robert May, Afternoon Robot Ltd.
-* Twitter: [@robotmay](https://twitter.com/robotmay) and [@photographer_io](https://twitter.com/photographer_io).
-* IRC: [#photographer-io on Freenode](irc://chat.freenode.net/photographer-io)
 
 ## This readme is in progress
-If you have any questions don't hesitate to ask via Twitter or at <support@photographer.io>
+If you have any questions don't hesitate to ask via Email or at <alexander.h@qq.com>
 
 ## Platform
 ### Languages Used
