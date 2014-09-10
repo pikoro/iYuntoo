@@ -1,0 +1,61 @@
+#pages-home
+  max-width: 1920px
+
+  #hero-photograph
+    position: relative
+    width: 100%
+
+    #hero-blurb
+      position: absolute
+      top: 0
+      width: 100%
+      background: rgba(0,0,0, .4)
+      text-align: center
+      padding-top: 10px
+
+      h2,h4
+        color: rgb(255,255,255)
+
+        a
+          color: #FDE410
+
+      .buttons
+        .button
+          color: white
+        .or
+          margin:
+            left: 10px
+            right: 10px
+          font:
+            style: oblique
+            size: 0.9em
+
+#pages-about
+  header
+    text-align: center
+
+  .points
+    @include white-box
+    
+    article
+      table
+        width: 100%
+
+      &.sign-up
+        margin-top: 60px
+
+        .button-container
+          text-align: center
+
+      .notes
+        font-size: 0.8em
+
+#pages-terms
+  #terms
+    @include white-box
+    ul, ol
+      margin-left: 20px
+
+    ol
+      ol
+        list-style: upper-roman

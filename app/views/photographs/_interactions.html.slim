@@ -1,0 +1,45 @@
+div class="interactions"
+  div class="inner"
+    div class="row"
+      div class="large-4 columns"
+        - cache([I18n.locale, photograph, :stats], expires_in: 10.minutes) do
+          div class="stats"
+            span class="views" title=(t("photographs.views"))
+              span class="icon"
+              span class="number"
+                = photograph.views.to_i
+
+            span class="favourites" title=(t("photographs.favourites"))
+              span class="icon"
+              span class="number"
+                = photograph.favourites_count
+
+      div class="large-8 columns"
+        - if user_signed_in? && photograph.user != current_user
+          div class="actual-interactions"
+            span class="recommendations"
+              - if current_user.recommended?(photograph)
+                a class="button small recommended success"
+                  = t("photographs.recommended")
+              - else
+                = link_to t("photographs.recommend"), recommend_photograph_path(photograph), { method: :post, class: "button small recommend secondary", "data-remote" => true }
+
+            span class="favourites"
+              - if current_user.favourited?(photograph)
+                = link_to photograph_favourite_path(photograph, current_user.favourites.where(photograph_id: photograph.id).first), method: :delete, class: "button small unfavourite alert", "data-remote" => true do
+                  | &nbsp;
+              - else
+                = link_to photograph_favourites_path(photograph), method: :post, class: "button small favourite secondary", "data-remote" => true do
+                  | &nbsp;
+
+div class="photo-navigation"
+  div class="inner"
+    - previous_id = previous_photo_id(photograph, last_viewed_photograph_ids)
+    - if previous_id.present?
+      span class="previous"
+        = link_to t("previous"), photograph_path(id: previous_id)
+
+    - next_id = next_photo_id(photograph, last_viewed_photograph_ids)
+    - if next_id.present?
+      span class="next"
+        = link_to t("next"), photograph_path(id: next_id)

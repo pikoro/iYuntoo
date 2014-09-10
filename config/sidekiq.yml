@@ -1,0 +1,12 @@
+:verbose: false
+:pidfile: /var/run/app/sidekiq.pid
+:concurrency: 10
+:queues:
+  - [events, 3]
+  - [mailer, 3]
+  - [sunspot, 2]
+  - [photos, 2]
+  - [default, 1]
+  - [low, 1]
+:limits:
+  photos: 3

@@ -1,0 +1,41 @@
+- opts ||= {}
+- cache([I18n.locale, photograph, photograph.metadata, opts], expires_in: 1.hour) do
+  div class="row"
+    aside class="metadata large-12 columns"
+      header
+        h5= t("photographs.metadata.title")
+      
+      table
+        - sections = photograph.show_copyright_info? ? [:camera, :image, :settings, :creator] : [:camera, :image, :settings]
+        - sections.each do |attr|
+          - if metadata_values_for_attr(photograph, attr, opts).size > 0
+            thead
+              tr
+                td colspan="2"
+                  = t("photographs.metadata.#{attr}")
+            tbody
+              - metadata_values_for_attr(photograph, attr, opts).each do |key, value|
+                - val = parse_and_display_metadata_value(key, value)
+                - unless val.blank?
+                  tr
+                    td= t("photographs.metadata.#{key}")
+                    td= val
+
+        thead
+          tr
+            td colspan="2"
+              = t("photographs.metadata.details")
+        tbody
+          - if photograph.category.present?
+            tr
+              td= t("photographs.metadata.category")
+              td itemprop="genre"
+                = link_to photograph.category.name, category_path(photograph.category.slug)
+
+          tr
+            td= t("photographs.metadata.license")
+            td
+              - if photograph.license.present?
+                = photograph.license.name
+              - else
+                = t("photographs.metadata.default_license")

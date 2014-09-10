@@ -1,0 +1,93 @@
+doctype html
+== "<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->"
+== "<!--[if lt IE 7 ]> <html class=\"ie6\" lang=\"en\"> <![endif]-->"
+== "<!--[if IE 7 ]>    <html class=\"ie7\" lang=\"en\"> <![endif]-->"
+== "<!--[if IE 8 ]>    <html class=\"ie8\" lang=\"en\"> <![endif]-->"
+== "<!--[if IE 9 ]>    <html class=\"ie9\" lang=\"en\"> <![endif]-->"
+== "<!--[if (gt IE 9)|!(IE)]><!--> <html lang=\"en\"> <!--<![endif]-->"
+
+head
+  meta charset="utf-8"
+  link rel="icon" href=(asset_path("favicon.png"))
+  link rel="apple-touch-icon" href=(asset_path("large-logo.png"))
+
+  / Set the viewport width to device width for mobile
+  meta name="viewport" content="width=device-width, initial-scale=1.0"
+
+  = stylesheet_link_tag "application"
+  = javascript_include_tag "custom.modernizr"
+  = render partial: "shared/pingdom"
+
+  meta name="description" content=t("metadata.description")
+  meta property="fb:app_id" content=(ENV['FACEBOOK_APP_ID'])
+  meta property="og:site_name" content=t("site_name")
+  meta name="twitter:site" content=t("social.twitter_account")
+  meta name="twitter:domain" content=(ENV['DOMAIN'])
+
+  == yield(:meta)
+
+  == yield(:stylesheets)
+  = csrf_meta_tag
+
+  title
+    - if @title.present?
+      = t("page_title", title: @title)
+    - else
+      = t("default_title")
+
+<body class="#{yield(:body_class)}" #{yield(:body_extras)}>
+  == yield(:before_body)
+
+  div id="wrapper"
+    header id="layout-header"
+      - if content_for?(:nav)
+        == yield(:nav)
+      - else
+        = render partial: "shared/nav"
+
+    - unless flash.empty?
+      div class="row"
+        div class="twelve columns"
+          - if flash[:alert].present?
+            div class="alert-box alert" data-alert=""
+              = flash[:alert]
+              a href="#" class="close"
+                | &times;
+
+          - if flash[:notice].present?
+            div class="alert-box" data-alert=""
+              = flash[:notice]
+              a href="#" class="close"
+                | &times;
+
+    - if content_for?(:main)
+      == yield(:main)
+    - else
+      == yield
+
+  footer id="layout-footer"
+    div class="row"
+      div class="large-4 columns"
+        ul class="inline-list"
+          li= link_to t("nav.about"), about_path
+          li= link_to t("terms"), terms_path
+          li= link_to t("privacy"), t("privacy_policy")
+          li= link_to t("social.github"), "https://github.com/afternoonrobot/photographer-io"
+          li= link_to t("social.google_plus"), "https://plus.google.com/100673063979311454242"
+          li= link_to t("social.twitter"), "https://twitter.com/photographer_io"
+
+        ul class="inline-list"
+          - t("locales").each do |key, name|
+            = link_to name.html_safe, url_for(locale: key), active_on: /\/#{key}\/.*/i, active_wrapper: :li
+
+      div class="large-8 columns" style="text-align: right;"
+        = simple_format t("copyright")
+
+  == yield(:after_body)
+
+  = render partial: "shared/analytics"
+  = render partial: "shared/pubnub"
+  = javascript_include_tag "application"
+  == yield(:javascript)
+</body>
+

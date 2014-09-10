@@ -1,0 +1,12 @@
+li[class="photo" itemprop="itemListElement" itemscope itemtype="http://schema.org/Photograph"]
+  div class="wrapper"
+    = link_to photograph_path(photograph), itemprop: "url" do
+      - if photograph.has_precalculated_sizes?
+        = photo_tag photograph, :thumbnail, itemprop: "image", width: "100%"
+      - else
+        = photo_tag photograph, "500x500>", quality: 70, itemprop: "image", width: "100%"
+    footer class="caption" itemprop="description"
+      - title = photograph.metadata.title
+      = t("photographs.caption", \
+          user: link_to(photograph.user.name, short_user_path(photograph.user.username)), \
+          photo: link_to((title.blank? ? t("untitled") : title), photograph_path(photograph))).html_safe

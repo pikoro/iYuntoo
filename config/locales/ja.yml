@@ -1,0 +1,538 @@
+ja:
+  site_name: "Photographer.io"
+  default_title: "ファンのためのフォトコミュニティ - Photographer.io"
+  page_title: "%{title} - Photographer.io"
+  copyright: >
+    全ての写真は、各々の作者が所有権を有します。許可無い使用はお控え下さい。
+
+    © Photographer.io, Afternoon Robot Ltd, 2013。 アイコンは、 <a href="http://glyphicons.com">glyphicons.com</a>からの提供です。
+
+    Powered by <a href="https://www.digitalocean.com/?refcode=0d41e836e212"> Digital
+    Ocean</a> servers。
+  privacy: "個人情報保護方針"
+  terms: "規約"
+  confirm_delete: "本当ですか？"
+  titles:
+    explore: "閲覧"
+    recommended: "他のメンバーによって推薦された写真"
+    favourites: "貴方のお気に入りの写真"
+    following: "貴方がフォローしている人の写真"
+    seeking_feedback: "貴方のフィードバックを求められている写真"
+  untitled: "タイトル無し"
+  social:
+    google_plus: "Google+"
+    twitter: "Twitter"
+    share: "共有"
+    twitter_account: "@photographer_io"
+    github: "GitHub"
+  privacy_policy: "https://www.iubenda.com/privacy-policy/288645"
+  previous: "前"
+  next: "次"
+  locales:
+    en: "英語"
+    es: "スペイン語 <abbr title='Beta'>*</abbr>"
+    fr: "フランス語 <abbr title='Beta'>*</abbr>"
+    nl_NL: "オランダ語"
+    pl: "ポーランド語"
+    pt_PT: "ポルトガル語 (ポルトガル) <abbr title='Beta'>*</abbr>"
+    pt_BR: "ポルトガル語 (ブラジル) <abbr title='Beta'>*</abbr>"
+    ru_RU: "ロシア語"
+  metadata:
+    description: >
+      Photographer.io は、写真が大好きな人のための新しいコミュニティです。コミュニティに参加して下さい； 貴方の写真を投稿し、他の方の素晴らしいショットを見つけ、貴方の画像にフィードバックを貰いましょう!
+  nav:
+    menu: "メニュー"
+    blog: "ブログ"
+    explore: "閲覧"
+    account: "アカウント"
+    photographs: "写真の管理"
+    sign_in: "サインイン"
+    sign_out: "サインアウト"
+    sign_up: "アカウント作成"
+    edit_account: "アカウント設定"
+    search: "検索"
+    recommended: "推薦"
+    categories: "カテゴリにより閲覧"
+    support: "サポート"
+    beta: "ベータ"
+    favourites: "お気に入り"
+    profile: "貴方の公開プロフィール"
+    mini_stats:
+      views: "貴方の写真が閲覧された総数"
+      followers: "貴方の更新をフォローしている人の総数"
+      recommendations: "貴方が受けた推薦の総数"
+      favourites: "貴方の写真がお気に入りにされた総数"
+    general: "閲覧"
+    latest: "最新の写真"
+    random: "ランダム写真に行く！"
+    following: "貴方がフォローした人の写真"
+    invite: "友達を招待"
+    dashboard: "ダッシュボード"
+    seeking_feedback: "フィードバックを求めてる写真"
+    about: "情報"
+    license: "ライセンスにより閲覧"
+  home:
+    title: >
+      貴方の写真を共有する新しい写真コミュニティ
+    blurb: >+
+      他の写真と並んで、アップロード、整頓、共有します。この <a href="%{image_path}">%{word} 画像</a>で%{name}がしたように。
+
+    words:
+    - 素晴らしい
+    - お見事
+    - すてき
+    - 絶品
+    - 壮観
+    - 最高
+    - 雄大
+    register: "アカウント作成"
+    about: "我々がなぜ違うかを学びましょう"
+    or: "または"
+    sign_up: "無料アカウントの作成"
+  about:
+    title: "Photographer.io について"
+    subtitle: "参加を勧める我々が考えるいくつかの利用: "
+    free:
+      title: "無料かつ公平です"
+      body: >
+        無料アカウントは、ここでは移民のように扱われません。全ての人が、サイトがどのように動いているのか、どの方向に向かっているかなど情報を等しく得られます。もし、ご提案、バグレポートまたはその他のフィードバックがありましたら、大変嬉しく思います。
+        <a href="mailto:support@photographer.io">support@photographer.io</a>まで、送って下さい。
+    open_source:
+      title: "オープンソースです"
+      body: >
+        我々のコードは、オープンソースで、MITライセンスの基 <a href='https://github.com/afternoonrobot/photographer-io'>GitHub</a>
+        で、利用可能です。バグフィックスを手伝ったり、新しい機能を追加したり、そして、自分の作りたいようにコミュニティをすることが出来ます。
+    advertising:
+      title: "広告無し"
+      body: >
+        我々は、広告が嫌いです。Photographer.io では<b>決して</b>広告を見ない理由です。このサイトは、近々会費によって賄われ、近い将来カメラギアなどのアフィリエイト・リンクも使用できます。しかし、我々は、絶対広告を表示しません。
+    money:
+      title: "我々は、明瞭な方法でお金を稼ぎます"
+      body: >
+        ここには、インチキはありません。会費が近々あるでしょう(すごく妥当な価格で)、そして、どのようにこのサイトが資金を得てるかわかります。ここには、投資家や広告主もいませんし、そして、貴方のデータを売ることはありません。
+    likes:
+      title: "リンクは切れていますが、推薦は長く続きます"
+      body: >
+        Photographer.io には、'好き'を使用していません。代わりに、全てのユーザは、最大一日当り %{quota} の推薦をすることが出来ます。推薦は、
+        <a href="/photographs/recommended">推薦ページ</a>上の写真を宣伝することに役立ちます。また、貴方のフォロワーに推薦も出来ます。
+
+
+        推薦は、 貴方が素晴らしいいと思った写真として公表されなければなりません。必ずしも貴方が最も好きなものではありません; これが、お気に入りが求めているものです！
+    comments:
+      title: "我々のコメント・システムは異なります"
+      body: >
+        Photographer.io 上のコメントは、今までのようなメッセージ掲示板やフォーラムのように動作します； コメントしてもらうテーマを選びます。これは、"うっそー、愛してる"よりも、有用なフィードバックの数を増やす目的です。標準では、作者と写真所有者(、そして、返信があれば、親コメントの所有者)のみコメントが見えます。貴方の写真に掲載されるコメントを選ぶことが出来ます。結局、それらは<i>貴方の</i>写真です;  写真と一緒に何を表示するかは、貴方が選ぶべきでありませんか?
+    privacy:
+      title: "プライバシーと安全は、本当に我々にとって重要です"
+      body: >
+        プリバシー及び安全に関しては、真剣に取り扱っています。全サイト及び全ての関係するサービス(画像ホスティングなど)はSSLを用い、パスワードは <a
+        href="http://bcrypt.sourceforge.net/">bcrypt</a> を使用して保存され、そして、如何なる安全に関する件は直ぐに対応します。
+
+
+        プライバシー： <a href="https://www.iubenda.com/privacy-policy/288645">プライバシーポリシーを確認</a>、または、<a
+        href="mailto:privacy@photographer.io">如何なる件もメール下さい</a>。
+
+        安全: 如何なる安全に関す事項やバグレポートがありましたら、<a href="mailto:security@photographer.io">security@photographer.io</a>までメール下さい。
+    compare:
+      title: "どのように他の写真コミュニティと比較したらいいでしょうか？"
+      flickr:
+        title: "Flickr"
+        uploads: "1TB"
+        albums: "無制限"
+        advertising: "はい"
+        ssl: "オプション"
+      500px:
+        title: "500px"
+        uploads: "週間20写真"
+        albums: "制限"
+        advertising: "いいえ"
+        ssl: "いいえ"
+      photographerio:
+        title: "Photographer.io"
+        uploads: "月間100写真 *"
+        albums: "無制限"
+        advertising: "いいえ"
+        ssl: "いつも"
+      free_accounts: "無料アカウント"
+      uploads: "写真アップロード"
+      albums: "アルバム/セット/コレクション"
+      advertising: "広告"
+      else: "他の全て"
+      ssl: "Site-wide SSL"
+      notes: >
+        * 友達を招待することによって、増やすことが出来ます。詳細は、貴方のアカウント・ページにあります。
+    interested: "興味ある？無料アカウントを作成しよう！"
+    sign_up: "アカウント作成"
+  account:
+    nav:
+      title: "貴方のアカウント"
+      home: "ダッシュボード"
+      settings: "アカウント設定"
+      invite: "友達を招待"
+      photographs: "写真"
+      upload_quota: "今月の利用状況"
+      get_more_uploads: "もっと必要? <a href='%{path}'>友達を招待!</a>"
+      authorisations: "接続したアカウント"
+    form:
+      auth: "サイイン詳細"
+      username: "ユーザ名"
+      public: "他のユーザに知られたいですか？"
+      settings: "アカウント設定"
+      comments: "コメント"
+      default_comment_threads: "標準コメント・スレッド"
+      create: "Photographer.io アカウント用サインアップ"
+    dashboard:
+      title: "アカウント・ダッシュボード"
+      blurb: >
+        公開用サイトに公開する前に、メンバーとして写真をアップロードし、整頓することができます。
+      notifications:
+        title: "活動"
+        empty: >
+          活動及び通知は、そのうちここに表示されます。しかし、現時点では、何もありません！
+      statistics:
+        title: "統計"
+        views: "貴方の写真を閲覧した総数"
+        photo_count: "写真"
+        public_photo_count: "公開写真"
+        private_photo_count: "プライベート写真"
+        recommendations: "推薦を受けた総数"
+        favourites: "貴方の写真のお気に入り総数"
+      recommendations:
+        title: "貴方の推薦"
+        quota: "現在、一日当り %{n} 写真を推薦することが出来ます"
+        remaining: "本日、残り %{n} 写真を推薦することが出来ます"
+        total: "合計 %{n} の推薦をしています"
+      usage:
+        title: "使用方法"
+        quota: "一月辺り %{n} 写真をアップロードすることが出来ます"
+        remaining: "今月、残り %{n} 写真をアップロードすることが出来ます"
+        get_more: "もっと必要? <a href='%{path}'>友達を招待!</a>"
+      hints:
+        title: "新規ユーザ用ヒント"
+        public_collections: >
+          貴方の写真を公開コレクションに追加するまでは、公衆には公開されません！見せる準備されていない写真を、うっかりと公開しないようにするためです。
+        recommendations: >
+          他のユーザの写真を推薦することが出来ます。これは、他のサイトの写真が好きと同じような機能があります。ただし、一日当りに推薦できる数に限りがあります。
+        homepage: >
+          最も推薦を得た写真は、ホームページの循環表示に用いられます。
+    authorisations:
+      create:
+        succeeded: "そのアカウントを無事認証しました"
+        failed: "そのアカウントを認証時に問題がありました。再度試して下さい。"
+      title: "他のサイトの貴方のアカウントを接続"
+      existing:
+        title: "接続したアカウント"
+        provider: "サイト"
+        email: "アカウント"
+        created_at: "リンク"
+        none: "どのアカウントともまだ接続されていません"
+    collections:
+      default:
+        public: "パブリック"
+        private: "プライベート"
+      delete: "このコレクションを削除"
+      form:
+        general: "コレクション詳細"
+      modal:
+        new:
+          button: "コレクション作成"
+          title: "新しいコレクションを作成"
+        edit:
+          button: "編集"
+          title: "コレクション編集"
+      create:
+        succeeded: "貴方の新しいコレクションは、無事作成さました。"
+        failed: "貴方のコレクションを更新に問題があります。以下のエラーを確認して下さい。"
+      update:
+        succeeded: "貴方のコレクションは、無事更新されました。"
+        failed: "貴方のコレクションを更新に問題があります。"
+      destroy:
+        succeeded: "コレクションは、無事削除されました。"
+        failed: "コレクションの削除で問題があります。"
+    photographs:
+      nav:
+        title: "写真"
+        all: "全て"
+        public: "パブリック"
+        private: "プライベート"
+        unsorted: "未分類"
+        collections: "コレクション"
+      view: "公開ページを閲覧"
+      views: "閲覧"
+      recommendations: "推薦"
+      favourites: "お気に入り"
+      upload: "アップロード"
+      delete: "この写真を削除"
+      logs: "プロセス ログ"
+      exit: >
+        このページを離れた場合、処理中のアップロードは、完了しません。
+      dropzone: >
+        アップロードするのに、写真をこのページにドラッグ＆ドロップすることが出来ます。%{guidelines} をお読み下さい。
+      public_warning: >
+        このコレクションは、公開として設定されました。ここにある写真は、誰でも見えるサイトに並べられます。
+      unsorted_warning: >
+        この閲覧は、画像全体のフィルターであり、実際のコレクションではありませんので、貴方がここにアップロードしたどんな写真も未ソート閲覧に追加されます。
+      edit_mode:
+        button: "複数選択"
+        change_collections: "コレクションに追加"
+        collection_note: >
+          貴方がコレクションを管理し、その特定のコレクションのチェックを外さない限り、それらコレクションから写真は削除されません。
+        delete: "削除"
+        reprocess: "再処理"
+      form:
+        general: "詳細"
+        collections: "この写真は、どのコレクションに属していますか？"
+        settings: "設定"
+        comments: "コメント"
+        threads: "どんなテーマにコメントを求めたいですか？"
+        threads_hint: >
+          この写真では、フィードバック/議論用のテーマを %{n} 件まで指定できます。Photographer.io 上に有意義なコメントを奨励したいと思っていますので、”これは何という種類の鳥でしょうか”、または、"建設的な批評"などのテーマを試して下さい。コメントは、標準で貴方とコメントした人に見えます。しかし、貴方が表示するに値すると思ったら、それらを公開することも出来ます;
+          貴方の写真の公開閲覧によりすることが出来ます。
+      create:
+        failed: "アップロード・エラー"
+      update:
+        succeeded: "貴方の変更は、無事保存されました！"
+        failed: "貴方の写真を保存中に、問題が発生しました。以下のエラーをチェックして下さい。"
+      mass_update:
+        no_photos_selected: "写真が選択されていません。"
+        failed: "写真をアップロードしている最中に、エラーが発生しました"
+        collections:
+          succeeded: "写真コレクションが、無事更新されました。"
+        delete:
+          succeeded: "写真は、無事削除されました。"
+        reprocess:
+          succeeded: "写真は、再処理のスケジュールされました。"
+      destroy:
+        succeeded: "貴方の写真が、無事削除されました。"
+        failed: "その写真を削除するのに問題があります。"
+      guidelines:
+        link: "画像ガイドライン"
+        title: "写真用ガイドライン"
+        body: |
+          以下は、Photographer.io へ写真をアップロードする概略のガイドラインです。
+          以下に従うことによって、貴方の画像を最高の状態で見せることに役立ちます。
+
+
+          * 現在サポートしている形式は、JPEG/JPG のみです。
+          * JPGで保存する時、最高品質の設定を利用して下さい。自動的に品質を調整しますので。
+          * 長手方向で少なくとも2000ピクセルで、画像をアップロードすることを推奨します。サイト内で、画像の拡大を起こさないようにします。
+          * 本サイトで一般の方がアクセスできる最大画像サイズは2000ピクセルで、ホームページの画像に使用されています。そこで掲載される画像から直ぐに手を掛ける必要が無くなります。
+          * 個々の写真ページ用画像は、長手方向で最大1500ピクセルで表示されます。
+          * 貴方のカメラからフルサイズでアップロードすることが出来ます; アップロードの割当は、サイズでは無く、画像の数で計算されます。しかしながら、アップロード及び処理時間を減らすためには、少し小さなサイズを利用することをお薦めします。
+          * 貴方がアップロードしたオリジナルの画像は、貴方以外誰もアクセスできません。このサイトで使用するために小さく最適化されたコピーが作成します。
+  collections:
+    caption: "%{user} さんは、%{collection} を更新しました"
+  collection_photographs:
+    user_must_match: "そのコレクションに写真を追加できません。"
+  comments:
+    saving: "保存中..."
+    unpublished: "投稿者と写真の所有者のみ見える"
+    child_unpublished: "投稿者、写真の所有者と親コメントの所有者のみ見える"
+    delete: "削除"
+    reply: "返信"
+    publish: "公開"
+    unpublish: "非公開"
+    none: >
+      このスレッドには、現在コメントがありません。上のフォームを使って、最初のコメントを投稿して下さい。
+    none_visible: >
+      ここには、現在、公開で見えるコメントがありません。変ですか？Photographer.io で、コメントがどのように動作学んで下さい。
+    notifications:
+      subject: "%{user} さんが、'%{on}' に新しいコメントを残しました"
+      body: >
+        %{user} さんが、'%{on}' に新しいコメントを残しました。見えるように設定しない限り、見ることができません。写真の公開閲覧に訪れることによって見ることが出来ます。
+      reply:
+        subject: "%{user} さんが、'%{on}' の貴方のコメントに新しい返信を残しました"
+        body: >
+          %{user} さんが、'%{on}' の貴方他のコメントに新しい返信を残しました。
+      published:
+        subject: "'%{on}' の貴方のコメントが、掲載されました。"
+  favourites:
+    notifications:
+      subject: "%{user} さんが、'%{photo}' をお気に入りにしました"
+    create:
+      succeeded: "写真が、貴方のお気に入りに追加されました！"
+      failed: "写真を貴方のお気に入りに追加することに失敗しました。"
+    destroy:
+      succeeded: "お気に入り削除！"
+      failed: "貴方のお気に入りから写真を削除することに失敗。"
+  followings:
+    follow: "フォロー"
+    unfollow: "アンフォロー"
+    create:
+      succeeded: "%{name} さんをフォローしています！"
+      failed: "そのユーザをフォローするのに問題があります。サポートに連絡をお願いします。"
+    destroy:
+      succeeded: "もはや、そのユーザをフォローしていません。"
+      failed: "貴方のフォローからそのユーザを削除するのに問題があります。"
+    notifications:
+      subject: "%{user} さんが、今貴方をフォローしています"
+  notifications:
+    title: "通知"
+    none: "通知はありません。"
+    mark_as_read: "既読"
+    email:
+      subject: "Photographer.io: %{subject}"
+      button: "Photographer.io で閲覧"
+      body: >
+        これは、以下のことを貴方に知らせるための自動通知です：
+  photographs:
+    title: "%{title} 、 %{by} さん"
+    user_quota_exceeded: >
+      あいにく、今月はアップロード制限に達しました :(
+    none: "ここには写真がありません！"
+    no_results: "貴方のクエリーに対する結果がありません。"
+    collections: "コレクションの一覧"
+    interactions_hint: >
+      このページの不要なものの量を減らすことを助けるには、推薦及びお気に入りボタンがサイドバーから削除され、その代わり、写真にマウスオーバーした時に表示されます。
+    share:
+      title: "共有"
+      blurb: >
+        以下のURLでこの写真を共有:
+    edit: "この写真を編集"
+    location: "場所"
+    recommend: "この写真を推薦"
+    recommended: "推薦"
+    favourite: "お気に入り"
+    unfavourite: "大嫌い"
+    stats: "統計"
+    views: "閲覧"
+    favourites: "お気に入り"
+    caption: "%{user}さんによる%{photo}"
+    sub_nav:
+      filter: "フィルター："
+      grouped: "コレクションによるグループ"
+      all: "全て"
+    metadata:
+      title: "写真詳細"
+      details: "詳細"
+      keywords: "キーワード"
+      camera: "カメラ"
+      image: "画像"
+      settings: "設定"
+      model: "モデル"
+      lens_type: "レンズ"
+      aperture: "絞り"
+      focal_length: "焦点距離"
+      shutter_speed: "シャッター速度"
+      fov: "視野"
+      iso: "ISO"
+      copyright_notice: "著作権"
+      rights: "権利"
+      creator: "作成者"
+      creator_city: "市"
+      creator_country: "国"
+      date_time_original: "撮影"
+      lat: "緯度"
+      lng: "経度"
+      license: "ライセンス"
+      default_license: "著作権表示"
+    creator:
+      profile: "プロフィール閲覧"
+      photos: "もっと写真を閲覧"
+  recommendations:
+    user_quota_exceeded: "今日は、与えることができる推薦を使い果たしました！"
+    quota: "今日は、さらに %{amount} 写真を推薦することが出来ます！"
+  users:
+    avatar: "アバター"
+    visit_site: "ウェブサイトを訪問"
+    username_format: "文字、数字、アンダースコアのみ許可されています。"
+    old_username_present: >
+      そのユーザ名は、以前に誰かが使用していました。限られた間、古い名前用に転送します。この名前とメールによる処理に関して質問がありましたら、 <a href="mailto:support@photographer.io">support@photographer.io</a>までご連絡ください。
+    username_quota_exceeded: >
+      これ以上、貴方のユーザ名を変更できません。助けが必要ですか？ <a href="mailto:support@photographer.io">support@photographer.io</a>にご連絡下さい。
+    username_quota: " %{n} 回以上、ユーザ名を変更できます"
+    invitations:
+      invited:
+        title: "貴方が既に招待した友達"
+        email: "Eメールアドレス"
+        status: "ステイタス"
+        confirmed: "承認！"
+        unconfirmed: "まだ承認されてません！"
+        none: |
+          まだ、誰も招待していません！右のフォームで始めましょう。
+      new:
+        title: "友達を招待"
+        invite: "招待を送信"
+        limit: >
+          このシステムがまだ新しい間は、現在、ユーザ毎の %{n} 招待の制限があります。利用に応じて、将来改定されるか取り除かれます。
+        spiel:
+          title: "友達を連れてきて、報酬を得ましょう！"
+          body: |
+            Photographer.io を楽しんでますか？愛を広げ、
+            参加してくれる友達を得ましょう！
+
+            呼んだ友達毎に、月当り追加 %{referral_bonus} アップロードを
+            得ることが出来ます。
+      edit:
+        title: "アカウント作成"
+        accept: "招待を承認し、アカウントを作成"
+        spiel:
+          title: "貴方の招待を承認し、参加しましょう！"
+          body: |
+            Photographer.io の無料メンバーが出来る事:
+
+            * 一月当り %{uploads} 写真のアップロード
+            * 無制限の写真コレクションの作成
+            * 他のユーザの更新のフォロー
+            * お気に入りの写真
+            * 推薦システムで貴方のお気に入りの写真を宣伝
+            * 写真へのコメントと批評
+
+            無制限のアップロード、多くの機能、そして、サイトサポートを得たいでしょうか？
+            有料プランを近日ご用意します！
+
+            質問がありますか？ [メール下さい！](mailto:support@photographer.io)
+
+            ##### 追加アップロード用の友達招待
+            サインアップした全ての友達に対して、貴方と友達の両方に、
+            一月当り追加 %{referral_bonus} アップロードを得ることが出来ます。
+            説明は、アカウント作成後、貴方のアカウントページに有ります。
+    sessions:
+      new:
+        title: "貴方のカウントにサイイン"
+        sign_in: "サインイン"
+        spiel:
+          title: "ようこそ　おかえりなさい！"
+          body: |
+            貴方が存在するユーザならば、反対側のホームを使って
+            貴方のアカウントにサインインして下さい。
+
+            アカウントを持ってないですか？[サインアップして参加しよう!](%{sign_up_path})
+    new:
+      title: "貴方のPhotographer.io アカウントを作成"
+      spiel:
+        title: "さぁ参加しよう！"
+        body: |
+          Photographer.io の無料メンバーが出来る事:
+
+          * 一月当り %{uploads} 写真のアップロード
+          * 無制限の写真コレクションの作成
+          * 他のユーザの更新のフォロー
+          * お気に入りの写真
+          * 推薦システムで貴方のお気に入りの写真を宣伝
+          * 写真へのコメントと批評
+
+          無制限のアップロード、多くの機能、そして、サイトサポートを得たいでしょうか？
+          有料プランを近日ご用意します！
+
+          ##### 追加アップロード用の友達招待
+          サインアップした全ての友達に対して、貴方と友達の両方に、
+          一月当り追加 %{referral_bonus} アップロードを得ることが出来ます。
+          説明は、アカウント作成後、貴方のアカウントページに有ります。
+
+
+          ##### このサイトは、現在ベータバージョンです
+          サービス規約は、近日中に発表されます。それまでの間、 我々は貴方の写真を盗用したりしませんし、
+          投稿された全てのものは、貴方自身のものです。
+
+          質問がありますか？ [メール下さい！](mailto:support@photographer.io)
+  reports:
+    new:
+      button: "レポート"
+    create:
+      succeeded: >
+        レポートが作成されました。この写真は、現在公開閲覧から見えなくなりました。
+      failed: >
+        レポート作成で問題があります。以下のエラーをチェックして下さい。
+  stories:
+    notification: "%{text}"

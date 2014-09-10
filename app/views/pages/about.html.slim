@@ -1,0 +1,90 @@
+- cache([I18n.locale, :about], expires_in: 10.minutes) do
+  section id="pages-about"
+    header class="row"
+      div class="large-12 columns"
+        h1= t("about.title")
+
+    div class="row"
+      section class="points small-12 large-8 large-offset-2 columns"
+        header
+          h2= t("about.subtitle")
+
+        article
+          h3= t("about.free.title")
+          = simple_format t("about.free.body")
+
+        article
+          h3= t("about.open_source.title")
+          = simple_format t("about.open_source.body")
+
+        article
+          h3= t("about.advertising.title")
+          = simple_format t("about.advertising.body")
+
+        article
+          h3= t("about.money.title")
+          = simple_format t("about.money.body")
+
+        article
+          h3= t("about.likes.title")
+          = simple_format t("about.likes.body", quota: ISO[:defaults][:recommendation_quota])
+        article
+          h3= t("about.comments.title")
+          = simple_format t("about.comments.body")
+
+        article
+          h3= t("about.privacy.title")
+          = simple_format t("about.privacy.body")
+
+        article
+          h3= t("about.compare.title")
+
+          table
+            thead
+              tr
+                th
+                th= t("about.compare.flickr.title")
+                th= t("about.compare.500px.title")
+                th= t("about.compare.photographerio.title")
+            tbody
+              thead
+                tr
+                  th colspan="4"
+                    = t("about.compare.free_accounts")
+              tr
+                th= t("about.compare.uploads")
+                td= t("about.compare.flickr.uploads")
+                td= t("about.compare.500px.uploads")
+                td= t("about.compare.photographerio.uploads")
+
+              tr
+                th= t("about.compare.albums")
+                td= t("about.compare.flickr.albums")
+                td= t("about.compare.500px.albums")
+                td= t("about.compare.photographerio.albums")
+
+              tr
+                th= t("about.compare.advertising")
+                td= t("about.compare.flickr.advertising")
+                td= t("about.compare.500px.advertising")
+                td= t("about.compare.photographerio.advertising")
+
+              thead
+                tr
+                  th colspan="4"
+                    = t("about.compare.else")
+              tr
+                th= t("about.compare.ssl")
+                td= t("about.compare.flickr.ssl")
+                td= t("about.compare.500px.ssl")
+                td= t("about.compare.photographerio.ssl")
+                
+          aside class="notes"
+            = simple_format t("about.compare.notes")
+
+        article class="sign-up"
+          header
+            h3= t("about.interested")
+
+          div class="button-container"
+            = link_to t("about.sign_up"), new_user_registration_path, class: "button success large radius"

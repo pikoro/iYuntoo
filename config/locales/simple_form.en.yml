@@ -1,0 +1,183 @@
+en:
+  simple_form:
+    "yes": 'Yes'
+    "no": 'No'
+    required:
+      text: 'required'
+      mark: '*'
+      # You can uncomment the line below if you need to overwrite the whole required html.
+      # When using html, text and mark won't be used.
+      # html: '<abbr title="required">*</abbr>'
+    error_notification:
+      default_message: "Please review the problems below:"
+    # Labels and hints examples
+    # labels:
+    #   defaults:
+    #     password: 'Password'
+    #   user:
+    #     new:
+    #       email: 'E-mail to sign in.'
+    #     edit:
+    #       email: 'E-mail.'
+    # hints:
+    #   defaults:
+    #     username: 'User name to sign in.'
+    #     password: 'No special characters, please.'
+
+    labels:
+      collection:
+        visible: "Do you want this collection to appear publicly on the site?"
+
+      comment_thread:
+        destroy: "Delete this thread"
+
+      user:
+        name: "Name"
+        location: "Location"
+        username: "Username"
+        password: "Password"
+        password_confirmation: "Password confirmation"
+        avatar: "Avatar"
+        biography: "Biography"
+        website_url: "Your website URL"
+        show_location_data: "Show location data"
+        show_copyright_info: "Show copyright info"
+        show_nsfw_content: "Show NSFW content"
+        default_license: "Default license"
+        receive_notification_emails: "Receive notification emails"
+        notify_favourites: "Notify favourites"
+        show_social_buttons: "Show social buttons"
+        locale: "Locale"
+        enable_comments_by_default: "Enable comments by default"
+        show_profile_background: "Show profile background"
+        profile_background_photo_id: "Profile background photo"
+
+    placeholders:
+      comment_thread:
+        subject: "e.g. What species is this bird? Or; How are my colour choices?"
+      user:
+        name: "Your name or nickname, e.g. Rupert B."
+        website_url: "http://yourgreatphotosite.com"
+        username: >
+          A unique name used in URLs, e.g. rupert_bear
+
+    hints:
+      comment_thread:
+        subject: >
+          On what subject would you like comments from your visitors? This could be
+          anything from "How are my leading lines?" to "Help me identify this bird!"
+
+      metadata:
+        keywords: >
+          Keywords should be a comma-separated list of tags relevant to the image, 
+          e.g. nature, birds, blackbird
+
+      photograph:
+        safe_for_work: >
+          Help out fellow users who browse this site from work; please mark this
+          photograph as unsafe for work if it contains any adult content which could 
+          be deemed unsuitable in an office environment.
+
+        license: >
+          By default you reserve all rights to your photographs. If you wish to add
+          a Creative Commons license, you can do so above.
+
+        show_location_data: >
+          Do you want to show the location of where this photograph was taken? You
+          can change your default setting for this in your account settings.
+
+        show_copyright_info: >
+          Do you want to display the copyright info, if it exists, which is embedded
+          in your photo metadata? This could contain personal information such as your
+          name and the area in which you live (city/country).
+
+        category: >
+          Setting a relevant category for your photo will help other people discover
+          it more easily!
+
+        enable_comments: >
+          If you enable comments you need to set at least one subject for commenters
+          to respond on. Comments are private between you and the commenter, unless
+          you choose to make them public.
+
+      user:
+        edit:
+          username: >
+            Your username is your unique identifier across the site, used in URLs and
+            to point to your profile page, 
+            e.g. https://www.photographer.io/u/rupert_bear.
+            It has to be unique, lowercase, and can only contain letters, numbers, and underscores.
+        
+        username: >
+          Can only contain letters, numbers, and underscores.
+
+        show_nsfw_content: >
+          Do you want to show content marked as Not Safe For Work? This could involve
+          nudity, gore, or other content which might not be deemed suitable for the
+          workplace.
+
+        default_license_id: >
+          By default you reserve all rights to your photographs. If you wish to add
+          a Creative Commons license, you can do so above. This will apply by default
+          to all new photographs you upload, but can be altered on each image.
+
+        show_location_data: >
+          Do you want to show the location where photographs were taken by default?
+          This can be altered on an image-by-image basis.
+
+        show_copyright_info: >
+          Do you want to display the copyright info, if it exists, which is embedded
+          in your photo metadata? This could contain personal information such as your
+          name and the area in which you live (city/country).
+
+        biography: >
+          Your biography will be displayed on your profile page. It doesn't currently
+          support any formatting past basic new line support. Markdown support is
+          coming soon.
+
+        receive_notification_emails: >
+          Do you want to receive an email for new, important notifications; e.g. new
+          comments?
+
+        notify_favourites: >
+          Do you want other users to know when you've favourited their photos?
+
+        show_social_buttons: >
+          Do you want to see social sharing options underneath photos, e.g. Twitter,
+          Facebook, Google etc?
+
+          This could have privacy implications.
+
+        locale: >
+          Choose the language you wish to browse the site in. If your language isn't
+          here, why not help translate Photographer.io into it? Find more details
+          <a href="https://github.com/afternoonrobot/photographer-io#translations">our GitHub repository</a>.
+
+        enable_comments_by_default: >
+          Enable comment threads by default for all new photographs you upload, using
+          the comment threads you set here.
+
+        default_comment_threads: >
+          Set the default comment threads to be used for your photographs here.
+          You can set defaults without enabling commenting by default.
+
+        show_profile_background: >
+          If you don't want to display a large photograph as the background to your
+          public profile page, you can disable it here.
+
+        profile_background_photo_id: >
+          You can pick a specific photo for your profile background. By default it
+          will be a random public photo from your uploads.
+
+  helpers:
+    submit:
+      comment:
+        create: "Post comment"
+        update: "Update"
+
+      mass_edit:
+        create: "Update"
+
+      user:
+        update: "Update your account details"
+        create: "Create your account"

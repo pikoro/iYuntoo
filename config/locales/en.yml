@@ -1,0 +1,661 @@
+en:
+  site_name: "Photographer.io"
+  default_title: "The photo community for enthusiasts - Photographer.io"
+  page_title: "%{title} - Photographer.io"
+  copyright: >
+    All photographs are copyright of their respective creators,
+    and may not be republished without permission.
+
+    © Photographer.io, Afternoon Robot Ltd, 2013. Icons courtesy of 
+    <a href="http://glyphicons.com">glyphicons.com</a>.
+
+    Powered by <a href="https://www.digitalocean.com/?refcode=0d41e836e212">
+    Digital Ocean</a> servers.
+
+  privacy: "Privacy Policy"
+  terms: "Terms"
+  confirm_delete: "Are you sure?"
+  titles:
+    explore: "Explore"
+    recommended: "Photos recommended by other members"
+    favourites: "Your favourite photographs"
+    following: "Photos from people you follow"
+    seeking_feedback: "Photos seeking your feedback"
+  untitled: "Untitled"
+  social:
+    google_plus: "Google+"
+    twitter: "Twitter"
+    share: "Share"
+    twitter_account: "@photographer_io"
+    github: "GitHub"
+  privacy_policy: "https://www.iubenda.com/privacy-policy/288645"
+  previous: "Previous"
+  next: "Next"
+
+  locales:
+    en: "English"
+    es: "Español <abbr title='Beta'>*</abbr>"
+    fr: "Français <abbr title='Beta'>*</abbr>"
+    nl_NL: "Nederlands"
+    pl: "Polski"
+    pt_PT: "Português (Portugal) <abbr title='Beta'>*</abbr>"
+    pt_BR: "Português (Brasil) <abbr title='Beta'>*</abbr>"
+    ru_RU: "русский"
+
+  metadata:
+    description: >
+      Photographer.io is a new community for photography enthusiasts. Come join
+      our community; post your photographs, discover great shots by others, and 
+      get feedback on your images!
+
+  nav:
+    menu: "Menu"
+    blog: "Blog"
+    explore: "Explore"
+    account: "Account"
+    photographs: "Manage photographs"
+    sign_in: "Sign in"
+    sign_out: "Sign out"
+    sign_up: "Create your account"
+    edit_account: "Account settings"
+    favourites: "Favourites"
+    search: "Search"
+    recommended: "Recommended"
+    categories: "Explore by category"
+    support: "Support"
+    beta: "Beta"
+    favourites: "Favourites"
+    profile: "Your public profile"
+    mini_stats:
+      views: "Total number of times your photos have been viewed"
+      followers: "Total number of people following your updates"
+      recommendations: "Total number of recommendations you've received"
+      favourites: "Total number of times your photos have been favourited"
+    general: "Explore"
+    latest: "Latest photographs"
+    random: "Go to a random photo!"
+    following: "Photographs from people you follow"
+    invite: "Invite a friend"
+    dashboard: "Dashboard"
+    seeking_feedback: "Photographs seeking feedback"
+    about: "About"
+    license: "Explore by License"
+
+  home:
+    title: >
+      A new photo community for sharing your photographs.
+    blurb: >
+      Upload, organise, and share your photographs alongside others, like %{name} did
+      with this <a href="%{image_path}">%{word} image</a>.
+    words:
+    - fantastic
+    - wonderful
+    - great
+    - excellent
+    - spectacular
+    - awesome
+    - superb
+    register: "Create your account"
+    about: "Learn about why we're different"
+    or: "or"
+    sign_up: "Create your free account"
+
+  about:
+    title: "About Photographer.io"
+    subtitle: "Some of the reasons why we think you should join us:"
+    free:
+      title: "It's free and fair"
+      body: >
+        Free accounts aren't treated like secondary citizens here. Everyone has 
+        equal input into how the site works and the direction we take.
+        If you have any suggestions, bug reports, or other feedback then we'd
+        love to hear it! Send it over to
+        <a href="mailto:support@photographer.io">support@photographer.io</a>.
+    
+    open_source:
+      title: "We're open source"
+      body: >
+        Our code is open source and available under an MIT license 
+        <a href='https://github.com/afternoonrobot/photographer-io'>on GitHub</a>. 
+        Help fix bugs, add new features, and make this the community you want it to be.
+    
+    advertising:
+      title: "No advertising"
+      body: >
+        We hate advertising, which is why you'll <b>never</b> see it on 
+        Photographer.io. The site will soon be supported by subscriptions, and we
+        may use affiliate links for camera gear etc in future; but we will never run
+        adverts.
+    
+    money:
+      title: "We make money in an obvious way"
+      body: >
+        There's no hocus pocus here. Subscriptions will be coming soon (and at a
+        very reasonable price), and these are how the site will be funded. There
+        are no investors, no advertisers, and no selling of your data.
+
+    likes:
+      title: "Likes are dead, long live the Recommendation"
+      body: >
+        We don't use 'Likes' on Photographer.io. Instead every user can make a
+        maximum of %{quota} recommendations per day.
+        A recommendation helps promote the photo on our 
+        <a href="/photographs/recommended">recommended page</a> but will soon
+        recommend the photo to your followers too.
+
+
+        Recommendations should be given out for photos which you think are great,
+        not necessarily the ones you love the most; that's what Favourites are for!
+
+    comments:
+      title: "Our commenting system is different"
+      body: >
+        Comments on Photographer.io work more like threads on a traditional 
+        message board/forum; you choose a subject for people to comment on. This
+        is aimed to help increase the amount of useful feedback you get, rather
+        than "OMG LOVE IT". Comments are only visible to the creator and the photo
+        owner by default (and the parent comment's owner if it's a reply). This
+        means that you get to choose which comments appear on your photos. They
+        are <i>your</i> photos after all; shouldn't you choose what appears
+        alongside them?
+
+    privacy:
+      title: "Privacy and security are really important to us"
+      body: >
+        We take privacy and security seriously. The entire site and all related
+        services (such as image hosting) are served over SSL, passwords are stored
+        using <a href="http://bcrypt.sourceforge.net/">bcrypt</a>, and we respond
+        to any security issues immediately.
+
+
+        Privacy: <a href="https://www.iubenda.com/privacy-policy/288645">Check out our privacy policy</a>
+        or <a href="mailto:privacy@photographer.io">email us with any queries</a>.
+        
+        Security: If you have any security issues or bugs to report, please email
+        them to 
+        <a href="mailto:security@photographer.io">security@photographer.io</a>.
+  
+    compare:
+      title: "How do we compare to other photo communities?"
+
+      flickr:
+        title: "Flickr"
+        uploads: "1TB"
+        albums: "Unlimited"
+        advertising: "Yes"
+        ssl: "Optional"
+      500px:
+        title: "500px"
+        uploads: "20 photos per week"
+        albums: "Limited"
+        advertising: "No"
+        ssl: "No"
+      photographerio:
+        title: "Photographer.io"
+        uploads: "100 photos per month *"
+        albums: "Unlimited"
+        advertising: "No"
+        ssl: "Always"
+      free_accounts: "Free Accounts"
+      uploads: "Photo uploads"
+      albums: "Albums/Sets/Collections"
+      advertising: "Advertising"
+      else: "Everything Else"
+      ssl: "Site-wide SSL"
+      notes: >
+        * Can be increased by inviting your friends! Details are in your 
+        account page.
+
+    interested: "Interested? Create your free account!"
+    sign_up: "Create your account"
+
+  account:
+    nav:
+      title: "Your Account"
+      home: "Dashboard"
+      settings: "Account settings"
+      invite: "Invite your friends"
+      photographs: "Photographs"
+      upload_quota: "Your usage this month"
+      get_more_uploads: "Need more? <a href='%{path}'>Invite your friends!</a>"
+      authorisations: "Connected accounts"
+
+    form:
+      auth: "Sign in details"
+      username: "Username"
+      public: "How do you want to be known to other users?"
+      settings: "Account settings"
+      comments: "Comments"
+      default_comment_threads: "Default comment threads"
+      create: "Sign up for a Photographer.io account"
+
+    dashboard:
+      title: "Your Account Dashboard"
+      blurb: >
+        As a member you can upload and organise your photographs before publishing
+        them on the public-facing site.
+
+      notifications: 
+        title: "Activity"
+        empty: >
+          Activity and notifications will appear here over time, but at the moment
+          you haven't received any!
+
+      statistics:
+        title: "Statistics"
+        views: "Total views for your photographs"
+        photo_count: "Photographs"
+        public_photo_count: "Public photographs"
+        private_photo_count: "Private photographs"
+        recommendations: "Total recommendations received"
+        favourites: "Total favourites of your photographs"
+
+      recommendations:
+        title: "Your Recommendations"
+        quota: "You can currently recommend %{n} photos per day"
+        remaining: "You have %{n} remaining recommendations for today"
+        total: "You have made a total of %{n} recommendations"
+
+      usage:
+        title: "Usage"
+        quota: "You can upload a total of %{n} photos per month"
+        remaining: "You have %{n} remaining uploads this month"
+        get_more: "Need more? <a href='%{path}'>Invite some friends!</a>"
+
+      hints:
+        title: "Hints for new users"
+        public_collections: >
+          Your photographs won't appear to the public until you have added them to a
+          public collection! This is to make sure you don't accidentally publish
+          images you aren't ready for people to see.
+        recommendations: >
+          You can recommend photographs from other users. This works similarly to
+          'liking' a photograph elsewhere, except that you have a finite amount of
+          recommendations you can make per day.
+        homepage: >
+          The top recommended photographs are put into rotation for the homepage.
+
+    authorisations:
+      create:
+        succeeded: "You have successfully authorised that account"
+        failed: "There was a problem authorising that account. Please try again."
+
+      title: "Connect your accounts on other sites"
+      existing:
+        title: "Connected accounts"
+        provider: "Site"
+        email: "Account"
+        created_at: "Linked on"
+        none: "You haven't connected any accounts yet"
+
+    collections:
+      default:
+        public: "Public"
+        private: "Private"
+
+      delete: "Delete this collection"
+      form:
+        general: "Collection details"
+
+      modal:
+        new: 
+          button: "Create collection"
+          title: "Create a new collection"
+
+        edit: 
+          button: "Edit"
+          title: "Edit collection"
+
+      create:
+        succeeded: "Your new collection has been created successfully."
+        failed: "There was a problem creating your collection. Please check for errors below."
+
+      update:
+        succeeded: "Your collection has been updated successfully."
+        failed: "There was a problem updating your collection."
+
+      destroy:
+        succeeded: "The collection has been deleted successfully."
+        failed: "There was a problem deleting your collection."
+
+    photographs:
+      nav:
+        title: "Photographs"
+        all: "All"
+        public: "Public"
+        private: "Private"
+        unsorted: "Unsorted"
+        collections: "Collections"
+      view: "View public page"
+      views: "Views"
+      recommendations: "Recommendations"
+      favourites: "Favourites"
+      upload: "Upload"
+      delete: "Delete this photograph"
+      logs: "Process Log"
+      exit: >
+        You have uploads in progress which will not be completed if you leave
+        this page.
+      dropzone: >
+        You can drag and drop your images onto this page to upload them. 
+        Read up on our %{guidelines}.
+      public_warning: >
+        This collection is set as public. Any photos in here will be listed on
+        the public-facing site.
+      unsorted_warning: >
+        As this view is a filter over the photographs and not an actual collection,
+        any photographs you upload here will be added to the unsorted view.
+      
+      edit_mode:
+        button: "Multi-select"
+        change_collections: "Add to collections"
+        collection_note: >
+          This will not remove photos from their collections unless you are managing
+          a collection and untick that specific collection.
+        delete: "Delete"
+        reprocess: "Reprocess"
+
+      form:
+        general: "Details"
+        collections: "What collections does this photo belong in?"
+        settings: "Settings"
+        comments: "Comments"
+        threads: "What subjects do you want comments on?"
+        threads_hint: >
+          You can specify up to %{n} subjects for feedback/discussion on this photo.
+          We want to promote meaningful comments on Photographer.io, so try subjects 
+          like "What species of bird is this?" or "Constructive Criticism". Comments
+          are visible to you and the commenter by default, but you can make them public
+          if you think they're worth displaying; this can be done via the public view
+          of your photo.
+
+      create:
+        failed: "Upload error"
+
+      update:
+        succeeded: "Your changes have been saved successfully!"
+        failed: "A problem occurred whilst saving your photograph. Please check for errors below."
+
+      mass_update:
+        no_photos_selected: "There were no photos selected."
+        failed: "An error occurred whilst attempting to update the photographs"
+        collections:
+          succeeded: "Photograph collections have been updated successfully."
+        delete:
+          succeeded: "Photographs have been deleted successfully."
+        reprocess:
+          succeeded: "Photographs have been scheduled for reprocessing."
+
+      destroy:
+        succeeded: "Your photograph has been deleted successfully."
+        failed: "There was a problem deleting that photograph."
+
+      guidelines:
+        link: "image guidelines"
+        title: "Guidelines for photographs"
+        body: |
+          The following are the rough guidelines for uploading your photos to 
+          Photographer.io. Following these will help ensure your images appear at their
+          best!
+
+          * Currently the only supported format is JPEG/JPG.
+          * Use a high quality setting when saving as JPG, as we adjust the quality automatically.
+          * It's recommended that you upload images of at least 2000 pixels in their largest dimension. This ensures that no scaling up will happen across the site.
+          * The largest image size accessible by the public on the site is 2000px, which is used for the homepage images. It will be possible to opt-out of your images appearing there soon.
+          * For individual photo pages the images are displayed at a maximum of 1500px in the largest dimension.
+          * You can upload full-size JPGs from your camera; upload quotas are calculated by the number of images, not the size. However it's recommended that you use slightly smaller copies to reduce upload and processing time.
+          * The original image you upload is not accessible by anyone but yourself, we generate smaller, optimised copies for use around the site.
+
+  collections:
+    caption: "%{user} updated %{collection}"
+
+  collection_photographs:
+    user_must_match: "You cannot add a photo to that collection"
+
+  comment_threads:
+
+  comments:
+    saving: "Saving..."
+    unpublished: "Visible only to the submitter and the photo owner"
+    child_unpublished: "Visible only to the submitter, photo owner, and parent comment owners"
+    delete: "Delete"
+    reply: "Reply"
+    publish: "Publish"
+    unpublish: "Unpublish"
+    none: >
+      There are currently no comments for this thread. Be the first and submit one
+      using the form above!
+
+    none_visible: >
+      There are currently no publically visible comments here. Curious? Learn more
+      about how commenting works on Photographer.io.
+
+    notifications:
+      subject: "%{user} has left a new comment on '%{on}'"
+      body: >
+        %{user} has left a new comment on your photograph '%{on}'. It won't be made
+        visible unless you choose to make it so, which you can do by visiting the 
+        public view of the photograph.
+      reply:
+        subject: "%{user} has left a new reply to your comment on '%{on}'"
+        body: >
+          %{user} has left a new reply to your comment on '%{on}'.
+      published:
+        subject: "Your comment on '%{on}' has been published"
+
+  favourites:
+    notifications:
+      subject: "%{user} has favourited '%{photo}'"
+    create:
+      succeeded: "The photo has been added to your favourites!"
+      failed: "Failed to add photo to your favourites."
+    destroy:
+      succeeded: "Favourite removed!"
+      failed: "Failed to remove the photo from your favourites."
+
+  followings:
+    follow: "Follow"
+    unfollow: "Unfollow"
+    create:
+      succeeded: "You are now following %{name}!"
+      failed: "There was a problem following that user. Please contact support."
+    destroy:
+      succeeded: "You are no longer following that user."
+      failed: "There was a problem removing that user from your followings."
+    notifications:
+      subject: "%{user} is now following you"
+
+  notifications:
+    title: "Notifications"
+    none: "You have no notifications right now."
+    mark_as_read: "Mark all as read"
+    not_found: >
+      That notification could not be found, it is possible that the event which
+      generated it has changed.
+    email:
+      subject: "Photographer.io: %{subject}"
+      button: "View on Photographer.io"
+      body: >
+        This is an automated notification email to inform you of the following:
+
+  photographs:
+    title: "%{title} by %{by}"
+    user_quota_exceeded: >
+      Unfortunately you have hit your upload limit for this month :(
+    none: "There are no photographs here!"
+    no_results: "There were no results for your query."
+    collections: "Listed in collections"
+    interactions_hint: >
+      To help reduce the amount of clutter on the page, the recommend and favourite
+      buttons have been removed from the sidebar and now display when hovering 
+      over the photo instead.
+    share:
+      title: "Share"
+      blurb: >
+        Share this photo with the following URL:
+    edit: "Edit this photo"
+    location: "Location"
+    recommend: "Recommend this photograph"
+    recommended: "Recommended!"
+    favourite: "Favourite"
+    unfavourite: "Unfavourite"
+    stats: "Statistics"
+    views: "Views"
+    favourites: "Favourites"
+    caption: "%{photo} by %{user}"
+    sub_nav:
+      filter: "Filter:"
+      grouped: "Group by collection"
+      all: "All"
+    metadata:
+      title: "Photograph Details"
+      details: "Details"
+      keywords: "Keywords"
+      camera: "Camera"
+      creator: "Creator"
+      image: "Image"
+      settings: "Settings"
+      model: "Model"
+      lens_type: "Lens"
+      aperture: "Aperture"
+      focal_length: "Focal length"
+      shutter_speed: "Shutter speed"
+      fov: "FOV"
+      iso: "ISO"
+      copyright_notice: "Copyright"
+      rights: "Rights"
+      creator: "Creator"
+      creator_city: "City"
+      creator_country: "Country"
+      date_time_original: "Taken at"
+      lat: "Latitude"
+      lng: "Longitude"
+      license: "License"
+      default_license: "All rights reserved"
+    creator:
+      profile: "View profile"
+      photos: "View more photos"
+
+  recommendations:
+    user_quota_exceeded: "You have run out of recommendations to give for today!"
+    quota: "You can recommend %{amount} more photographs today!"
+
+  users:
+    avatar: "Avatar"
+    visit_site: "Visit website"
+    username_format: "Only letters, numbers, and underscores allowed."
+    old_username_present: >
+      That username has been used in the past by someone else. We maintain redirects
+      for old names for a limited time. Get in touch if you have any questions about
+      this name or process by emailing 
+      <a href="mailto:support@photographer.io">support@photographer.io</a>.
+
+    username_quota_exceeded: >
+      You can't change your username any more times. Need help? Contact us at
+      <a href="mailto:support@photographer.io">support@photographer.io</a>.
+
+    username_quota: "You can change your username %{n} more time(s)"
+
+    invitations:
+      invited:
+        title: "Friends you've already invited"
+        email: "Email address"
+        status: "Status"
+        confirmed: "Accepted!"
+        unconfirmed: "Not yet accepted"
+        none: |
+          You haven't invited anyone yet! Get started with the form to the right.
+
+      new:
+        title: "Invite your friends"
+        invite: "Send invite"
+        limit: >
+          There is currently a limit of %{n} invites per user whilst this system
+          is new. This will likely be altered or removed in future depending on usage.
+
+        spiel:
+          title: "Bring your friends along and get rewards!"
+          body: |
+            Enjoying Photographer.io? Spread the love and get your friends
+            to join us too!
+
+            For every friend you recruit you'll gain %{referral_bonus} extra uploads
+            per month.
+
+      edit:
+        title: "Create your account"
+        accept: "Accept invitation and create account"
+        spiel:
+          title: "Accept your invite and join us!"
+          body: |
+            As a free member of Photographer.io you'll be able to:
+
+            * Upload up to %{uploads} photos per month
+            * Create unlimited photo collections
+            * Follow other users' updates
+            * Favourite photographs
+            * Promote your favourite photos with the recommendation system
+            * Comment on and critique photos
+
+            Want to get unlimited uploads, more features, and help support the site? 
+            A paid plan is coming soon!
+
+            Questions? [Email us!](mailto:support@photographer.io)
+
+            ##### Refer your friends for extra uploads
+            For every friend you get to sign up, both you and your friend will 
+            gain an extra %{referral_bonus} uploads per month. 
+            Instructions are in your account page after you create
+            your account.
+            
+    sessions:
+      new:
+        title: "Sign in to your account"
+        sign_in: "Sign in"
+        spiel:
+          title: "Welcome back!"
+          body: |
+            If you're an existing user, please sign into your account using the
+            form opposite.
+
+            Don't have an account yet? [Sign up and join us!](%{sign_up_path})
+    new:
+      title: "Create your Photographer.io account"
+      spiel:
+        title: "Join us!"
+        body: |
+          As a free member of Photographer.io you'll be able to:
+
+          * Upload up to %{uploads} photos per month
+          * Create unlimited photo collections
+          * Follow other users' updates
+          * Favourite photographs
+          * Promote your favourite photos with the recommendation system
+          * Comment on and critique photos
+
+          Want to get unlimited uploads, more features, and help support the site? 
+          A paid plan is coming soon!
+
+          ##### Refer your friends for extra uploads
+          For every friend you get to sign up, both you and your friend will 
+          gain an extra %{referral_bonus} uploads per month. 
+          Instructions are in your account page after you create
+          your account.
+
+          ##### This site is currently in beta
+          Our Terms of Service will be published soon. Until then just know that
+          we will not steal your photos, and everything posted must be your own.
+
+          Questions? [Email us!](mailto:support@photographer.io)
+
+  reports:
+    new:
+      button: "Report"
+    create:
+      succeeded: >
+        Report created. This photo is now hidden from public browsing.
+      failed: >
+        There was a problem creating the report. Check for errors below.
+
+  stories:
+    notification: "%{text}"

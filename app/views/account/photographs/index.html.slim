@@ -1,0 +1,80 @@
+- content_for(:pagination) do
+  - if @photographs.present? && @photographs.size > 0
+    = paginate @photographs
+
+section id="account-photographs-index"
+  header class="row"
+    div class="large-12 columns"
+      - if @collection.present?
+        div class="row"
+          div class="large-10 columns"
+            h2= @collection.name
+
+          div class="large-2 columns"
+            button data-reveal-id="edit-collection-modal" class="small edit-collection"
+              = t("account.collections.modal.edit.button")
+
+        - content_for(:after_body) do
+          div id="edit-collection-modal" class="reveal-modal small"
+            a class="close-reveal-modal"
+              | &#215;
+            h2= t("account.collections.modal.edit.title")
+            = render partial: "account/collections/form", locals: { collection: @collection }
+
+      - if @collection.present? && @collection.visible
+        div class="alert-box"
+          = t("account.photographs.public_warning")
+
+      - if ["public", "private", "unsorted"].include?(params[:action])
+        div class="alert-box"
+          = t("account.photographs.unsorted_warning")
+
+      = render partial: "upload", locals: { photograph: current_user.photographs.new }
+
+  = simple_form_for MassEdit.new, url: (@collection.present? ? mass_update_account_collection_photographs_path(@collection) : mass_update_account_photographs_path), method: :post, html: { class: "custom_form" } do |f|
+    div class="row"
+      section class="mass-edit large-12 columns"
+        dl class="sub-nav"
+          dt
+            button id="toggle-edit-mode" class="button"
+              = t("account.photographs.edit_mode.button")
+
+          dd
+            button id="change-collections" class="button dropdown disabled" data-dropdown="MECollections"
+              = t("account.photographs.edit_mode.change_collections")
+
+          dd
+            button id="delete-photographs" class="button disabled" data-confirm=t("confirm_delete") data-action="delete"
+              = t("account.photographs.edit_mode.delete")
+
+          dd
+            button id="reprocess-photographs" class="button disabled" data-action="reprocess"
+              = t("account.photographs.edit_mode.reprocess")
+
+        ul[id="MECollections" class="f-dropdown" data-dropdown-content]
+          li class="hint"
+            = t("account.photographs.edit_mode.collection_note")
+          - current_user.collections.order("name ASC").each do |collection|
+            li
+              label for="mass_edit_collection_ids_#{collection.id}"
+                - if @collection.present? && @collection == collection
+                  input[type="checkbox" id="mass_edit_collection_ids_#{collection.id}" name="mass_edit[collection_ids][]" value=(collection.id) autocomplete="off" checked]
+                - else
+                  input type="checkbox" id="mass_edit_collection_ids_#{collection.id}" name="mass_edit[collection_ids][]" value=(collection.id) autocomplete="off"
+                = collection.name
+
+          li class="action"
+            = f.button :submit, class: "button expand small"
+
+    div class="row"
+      div class="large-12 columns"
+        == yield(:pagination)
+
+    div class="row"
+      div class="large-12 columns"
+        ul class="large-block-grid-5 photo-grid"
+          = render @photographs, cache: true, cache_options: { expires_in: 10.minutes }
+
+    div class="row"
+      div class="large-12 columns"
+        == yield(:pagination)

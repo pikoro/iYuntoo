@@ -1,0 +1,84 @@
+= simple_form_for [:account, photograph] do |f|
+  section class="row"
+    div class="large-9 columns"
+      div class="photo-pane"
+        - if photograph.has_precalculated_sizes?
+          = photo_tag photograph, :large
+        - else
+          = photo_tag photograph, "1000x1000>"
+
+      = f.simple_fields_for :metadata do |m|
+        div class="panel"
+          fieldset
+            legend= t("account.photographs.form.general")
+            = m.input :title, required: false
+            = m.input :keywords, required: false, input_html: { value: m.object.keywords_string }
+            = m.input :description, as: :text, required: false
+
+      div class="panel"
+        fieldset
+          legend= t("account.photographs.form.collections")
+          div class="row"
+            div class="large-8 columns"
+              = f.association :collections, as: :check_boxes, collection: current_user.collections.order("name ASC"), label: false
+            
+            div class="large-4 columns"
+              = f.association :category, collection: Category.order("name ASC")
+
+      div class="panel"
+        fieldset
+          legend= t("account.photographs.form.settings")
+          div class="row"
+            div class="large-3 columns"
+              = f.input :safe_for_work, as: :radio_buttons
+
+            div class="large-3 columns"
+              = f.input :show_copyright_info, as: :radio_buttons
+
+            div class="large-3 columns"
+              = f.association :license
+
+            div class="large-3 columns"
+              = f.input :show_location_data, as: :radio_buttons, default: (f.object.user.show_location_data)
+
+      div class="panel"
+        div class="row"
+          div class="large-3 columns"
+            fieldset
+              legend= t("account.photographs.form.comments")
+              = f.input :enable_comments, as: :radio_buttons
+
+          div class="large-9 columns"
+            fieldset
+              legend= t("account.photographs.form.threads")
+              = f.simple_fields_for :comment_threads do |ct|
+                div class="row"
+                  div class="large-9 columns"
+                    = ct.input :subject, as: :string, label: false
+                  div class="large-3 columns"
+                    - if ct.object.persisted?
+                      = ct.input :_destroy, as: :boolean, label: t("simple_form.labels.comment_thread.destroy")
+              span class="hint"
+                = t("account.photographs.form.threads_hint", n: ISO[:defaults][:max_comment_threads])
+
+      = f.button :submit
+
+      - if photograph.persisted?
+        = link_to t("account.photographs.delete"), account_photograph_path(photograph), method: :delete, data: { confirm: t("confirm_delete") }, class: "button small alert delete"
+
+    div class="large-3 columns"
+      - if photograph.public?
+        = link_to t("account.photographs.view"), photograph_path(photograph), class: "button secondary expand"
+
+      = render partial: "metadata_form", locals: { photograph: photograph, f: f }
+
+      - if photograph.metadata.has_location_data?
+        h5= t("photographs.location")
+        = render partial: "photographs/map", locals: { photograph: photograph }
+
+      - if photograph.processing? && photograph.logs.size > 0
+        div class="panel logs"
+          h5= t("account.photographs.logs")
+          ol
+            - photograph.logs.each do |message|
+              li= message

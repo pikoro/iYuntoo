@@ -1,0 +1,538 @@
+pl:
+  site_name: "Photographer.io"
+  default_title: "Photographer.io - społeczność miłośników fotografii"
+  page_title: "%{title} - Photographer.io"
+  copyright: >
+    Prawa autorskie do wszystkich zdjęć należą do twórców tych zdjęć, nie można ich
+    publikować bez zgody właścicieli.
+
+    © Photographer.io, Afternoon Robot Ltd, 2013. Ikony z serwisu <a href="http://glyphicons.com">glyphicons.com</a>.
+
+    Usługa działa na serwerach firmy <a href="https://www.digitalocean.com/?refcode=0d41e836e212">Digital
+    Ocean</a>.
+  privacy: "Polityka prywatności"
+  terms: "Zasady korzystania"
+  confirm_delete: "Jesteś pewien?"
+  titles:
+    explore: "Przeglądaj"
+    recommended: "Zdjęcia polecane przez innych użytkowników"
+    favourites: "Twoje ulubione zdjęcia"
+    following: "Zdjęcia użytkowników, których śledzisz"
+    seeking_feedback: "Zdjęcia czekające na komentarz"
+  untitled: "Bez tytułu"
+  social:
+    google_plus: "Google+"
+    twitter: "Twitter"
+    share: "Podziel się"
+    twitter_account: "@photographer_io"
+    github: "GitHub"
+  privacy_policy: "https://www.iubenda.com/privacy-policy/288645"
+  previous: "Poprzednie"
+  next: "Następne"
+  locales:
+    en: "angielski"
+    es: "hiszpański <abbr title='wersja beta'>*</abbr>"
+    fr: "francuski <abbr title='wersja beta'>*</abbr>"
+    nl_NL: "holenderski"
+    pl: "polski"
+    pt_PT: "portugalski (Portugalia) <abbr title='wersja beta'>*</abbr>"
+    pt_BR: "portugalski (Brazylia) <abbr title='wersja beta'>*</abbr>"
+    ru_RU: "rosyjski"
+  metadata:
+    description: >
+      Photographer.io to nowa społeczność miłośników fotografii. Dołącz do nas; publikuj
+      swoje zdjęcia, odkrywaj świetne fotki innych użytkowników i zbieraj komentarze
+      do swoich prac!
+  nav:
+    menu: "Menu"
+    blog: "Blog"
+    explore: "Przeglądaj"
+    account: "Konto"
+    photographs: "Zarządzaj zdjęciami"
+    sign_in: "Zaloguj się"
+    sign_out: "Wyloguj się"
+    sign_up: "Załóż konto"
+    edit_account: "Ustawienia konta"
+    search: "Szukaj"
+    recommended: "Polecane"
+    categories: "Przeglądaj kategoriami"
+    support: "Wsparcie"
+    beta: "Beta"
+    favourites: "Ulubione"
+    profile: "Twój profil publiczny"
+    mini_stats:
+      views: "Liczba wszystkich odsłon twoich zdjęć"
+      followers: "Liczba wszystkich użytkowników śledzących twoje aktualizacje"
+      recommendations: "Liczba wszystkich otrzymanych rekomendacji"
+      favourites: "Liczba wszystkich twoich zdjęć oznaczonych jako ulubione"
+    general: "Przeglądaj"
+    latest: "Najnowsze zdjęcia"
+    random: "Przejdź do losowego zdjęcia!"
+    following: "Zdjęcia śledzonych użytkowników"
+    invite: "Zaproś znajomego"
+    dashboard: "Panel użytkownika"
+    seeking_feedback: "Zdjęcia oczekujące na komentarz"
+    about: "O serwisie"
+    license: "Przeglądaj według licencji"
+  home:
+    title: >
+      Nowa społeczność do dzielenia się zdjęciami.
+    blurb: >
+      Wysyłaj, organizuj i dziel się zdjęciami z innymi, tak jak to zrobił użytkownik
+      %{name} ze swoją <a href="%{image_path}">%{word} fotografią</a>.
+    words:
+    - fantastyczną
+    - cudowną
+    - świetną
+    - doskonałą
+    - wspaniałą
+    - rewelacyjną
+    - niesamowitą
+    register: "Załóż konto"
+    about: "Dowiedz się dlaczego jesteśmy inni"
+    or: "lub"
+    sign_up: "Załóż darmowe konto"
+  about:
+    title: "O serwisie Photographer.io"
+    subtitle: "Oto garść powodów, dla których naszym zdaniem warto dołączyć do tego serwisu:"
+    free:
+      title: "Jest darmowy i uczciwy"
+      body: >
+        Użytkownicy darmowych kont nie są tu traktowani jak obywatele drugiej kategorii.
+        Każdy ma równy wkład w to, jak serwis działa, i w kierunek zmian, jaki obieramy.
+        Jeśli masz jakieś sugestie, zgłoszenia błędów lub inne komentarze na temat
+        serwisu, to bardzo chcemy o tym usłyszeć! Wyślij wiadomość na adres <a href="mailto:support@photographer.io">support@photographer.io</a>.
+    open_source:
+      title: "Nasz kod jest otwarty"
+      body: >
+        Nasz kod jest wolnym oprogramowaniem i jest dostępny na licencji MIT <a href='https://github.com/afternoonrobot/photographer-io'>na
+        GitHubie</a>. Pomóż naprawiać błędy, dodawać nowe funkcje i budować społeczność,
+        w jakiej chciałbyś uczestniczyć.
+    advertising:
+      title: "Nie wyświetlamy reklam"
+      body: >
+        Nienawidzimy reklam i dlatego <b>nigdy</b> ich nie zobaczysz na Photographer.io.
+        Ten serwis będzie wkrótce finansowany przez subskrypcje i możemy kiedyś użyć
+        zaprzyjaźnionych odnośników do sprzętu fotograficznego, ale nigdy nie wprowadzimy
+        reklam.
+    money:
+      title: "Zarabiamy w zrozumiały sposób"
+      body: >
+        Nie ma tu żadnych sztuczek. Wkrótce zostanie uruchomiony mechanizm subskrypcji
+        (i to z bardzo rozsądnymi opłatami) i właśnie w ten sposób będziemy zbierać
+        fundusze. Nie ma żadnych inwestorów, reklamodawców ani sprzedawania twoich
+        danych.
+    likes:
+      title: "Umarły polubienia, niech żyją rekomendacje"
+      body: >
+        Na Photographer.io nie używamy "lajków". Zamiast tego każdy użytkownik może
+        wystawić maksymalnie %{quota} rekomendacji dziennie. Rekomendacja pomaga promować
+        zdjęcie na naszej  <a href="/photographs/recommended">stronie polecanych prac</a>,
+        ale wkrótce będzie także polecać zdjęcie użytkownikom, którzy cię śledzą w
+        tym serwisie.
+
+
+        Rekomendacje powinny być wystawiane zdjęciom, które uważasz za świetne, a
+        nie koniecznie tym, które najbardziej lubisz, bo do tego z kolei służy oznaczanie
+        jako ulubione!
+    comments:
+      title: "Nasz system komentowania jest inny"
+      body: >
+        Komentarze na Photographer.io działają bardziej jak wątki na tradycyjnych
+        forach internetowych; ty wybierasz na jaki temat chcesz usłyszeć komentarze.
+        Ma to pomóc zwiększyć liczbę użytecznych informacji zwrotnych, zamiast "SUPER
+        FOTA". Komentarze są domyślnie widoczne tylko dla komentującego i właściciela
+        zdjęcia (oraz poprzednich autorów w wątku, jeśli to odpowiedź). Oznacza to,
+        że samodzielnie wybierasz, które komentarze pod zdjęciem będą wyświetlane.
+        Ostatecznie to <i>twoje</i> zdjęcia; dlaczego nie miałbyś decydować co widać
+        wraz z nimi?
+    privacy:
+      title: "Prywatność i bezpieczeństwo są dla nas naprawdę ważne"
+      body: >
+        Bierzemy prywatność i bezpieczeństwo na serio. Cały serwis i powiązane usługi
+        (takie jak hosting obrazów) są serwowane łączami SSL, hasła są przechowywane
+        za pomocą <a href="http://bcrypt.sourceforge.net/">bcrypt</a>, a na wszelkie
+        luki bezpieczeństwa odpowiadamy natychmiast.
+
+
+        Prywatność: <a href="https://www.iubenda.com/privacy-policy/288645">sprawdź
+        naszą politykę prywatności</a> lub <a href="mailto:privacy@photographer.io">wyślij
+        nam e-mail z pytaniami</a>.
+
+        Bezpieczeństwo: jeśli masz jakieś problemy z bezpieczeństwem lub chcesz zgłosić
+        błędy, wyślij e-mail na adres <a href="mailto:security@photographer.io">security@photographer.io</a>.
+    compare:
+      title: "Jak wypadamy w porównaniu z innymi serwisami fotograficznymi?"
+      flickr:
+        title: "Flickr"
+        uploads: "1 TB"
+        albums: "bez ograniczeń"
+        advertising: "tak"
+        ssl: "opcjonalne"
+      500px:
+        title: "500px"
+        uploads: "20 zdjęć na tydzień"
+        albums: "ograniczone"
+        advertising: "nie"
+        ssl: "nie"
+      photographerio:
+        title: "Photographer.io"
+        uploads: "100 zdjęć na miesiąc *"
+        albums: "bez ograniczeń"
+        advertising: "nie"
+        ssl: "zawsze"
+      free_accounts: "darmowe konta"
+      uploads: "wysyłanie zdjęć"
+      albums: "albumy/zestawy/kolekcje"
+      advertising: "reklamy"
+      else: "pozostałe funkcje"
+      ssl: "szyfrowanie SSL"
+      notes: >
+        * ten limit możesz zwiększyć zaproszając znajomych! Szczegóły znajdują się
+        na stronie twojego konta.
+    interested: "Brzmi zachęcająco? Załóż darmowe konto!"
+    sign_up: "Załóż konto"
+  account:
+    nav:
+      title: "Twoje konto"
+      home: "Panel użytkownika"
+      settings: "Ustawienia konta"
+      invite: "Zaproś swoich znajomych"
+      photographs: "Zdjęcia"
+      upload_quota: "Wykorzystanie limitów na ten miesiąc"
+      get_more_uploads: "Potrzebujesz więcej? <a href='%{path}'>Zaproś znajomych!</a>"
+      authorisations: "Skojarzone konta"
+    form:
+      auth: "Szczegóły logowania"
+      username: "Nazwa użytkownika"
+      public: "Jak chcesz być widoczny dla innych użytkowników?"
+      settings: "Ustawienia konta"
+      comments: "Komentarze"
+      default_comment_threads: "Domyślne wątki"
+      create: "Załóż konto w serwisie Photographer.io"
+    dashboard:
+      title: "Twój panel użytkownika"
+      blurb: >
+        Jako członek serwisu możesz wysyłać i organizować swoje zdjęcia przed ich
+        publikacją na profilu publicznym.
+      notifications:
+        title: "Aktywność"
+        empty: >
+          Z czasem pojawi się tu lista aktywności i powiadomień, ale w tej chwili
+          nie masz jeszcze żadnych!
+      statistics:
+        title: "Statystyki"
+        views: "Liczba wszystkich odsłon twoich zdjęć"
+        photo_count: "Zdjęcia"
+        public_photo_count: "Zdjęcia publiczne"
+        private_photo_count: "Zdjęcia prywatne"
+        recommendations: "Wszystkie otrzymane rekomendacje"
+        favourites: "Twoje ulubione zdjęcia ogółem"
+      recommendations:
+        title: "Twoje rekomendacje"
+        quota: "Obecnie możesz polecać %{n} zdjęć dziennie"
+        remaining: "Na dziś pozostało ci jeszcze %{n} rekomendacji"
+        total: "Wystawiłeś %{n} rekomendacji"
+      usage:
+        title: "Wykorzystanie limitów"
+        quota: "Możesz wysyłać %{n} zdjęć miesięcznie"
+        remaining: "W tym miesiącu możesz wysłać jeszcze %{n} zdjęć"
+        get_more: "Potrzebujesz więcej? <a href='%{path}'>Zaproś znajomych!</a>"
+      hints:
+        title: "Porady dla nowych użytkowników"
+        public_collections: >
+          Twoje zdjęcia nie zostaną wyświetlone innym, dopóki nie dodasz ich do kolekcji
+          publicznej! Dzieje się tak dlatego, abyś przez przypadek nie opublikował
+          prac, których nie jesteś jeszcze gotowy pokazać.
+        recommendations: >
+          Możesz rekomendować zdjęcia innych użytkowników. Działa to podobnie jak
+          "polubienie" zdjęć w innych serwisach, poza tym, że masz ograniczoną liczbę
+          rekomendacji, których możesz udzielić w ciągu dnia.
+        homepage: >
+          Najczęściej polecane zdjęcia są wyświetlane rotacyjnie na stronie głównej.
+    authorisations:
+      create:
+        succeeded: "Dokonałeś pomyślnej autoryzacji tego konta"
+        failed: "Wystąpił problem z autoryzacją tego konta. Spróbuj ponownie."
+      title: "Skojarz swoje konta w innych serwisach"
+      existing:
+        title: "Skojarzone konta"
+        provider: "Strona"
+        email: "Konto"
+        created_at: "Połączone"
+        none: "Nie skojarzyłeś jeszcze żadnych kont"
+    collections:
+      default:
+        public: "publiczne"
+        private: "prywatne"
+      delete: "Usuń tę kolekcję"
+      form:
+        general: "Szczegóły kolekcji"
+      modal:
+        new:
+          button: "Utwórz kolekcję"
+          title: "Utwórz nową kolekcję"
+        edit:
+          button: "Edycja"
+          title: "Edytuj kolekcję"
+      create:
+        succeeded: "Twoja nowa kolekcja została utworzona."
+        failed: "Wystąpił problem podczas tworzenia kolekcji. Poczytaj o tych błędach poniżej."
+      update:
+        succeeded: "Twoja kolekcja została zaktualizowana."
+        failed: "Wystąpił problem podczas aktualizowania kolekcji."
+      destroy:
+        succeeded: "Kolekcja została usunięta."
+        failed: "Wystąpił problem podczas usuwania kolekcji."
+    photographs:
+      nav:
+        title: "Zdjęcia"
+        all: "wszystkie"
+        public: "publiczne"
+        private: "prywatne"
+        unsorted: "nieposortowane"
+        collections: "Kolekcje"
+      view: "Zobacz profil publiczny"
+      views: "Odwiedziny"
+      recommendations: "Rekomendacje"
+      favourites: "Ulubione"
+      upload: "Wyślij"
+      delete: "Usuń to zdjęcie"
+      logs: "Przebieg obróbki"
+      exit: >
+        Jeśli opuścisz tę stronę trwające właśnie przesyłanie zdjęć zostanie przerwane.
+      dropzone: >
+        Możesz wysyłać zdjęcia przeciągając je i upuszczając na tę stronę. Przeczytaj
+        %{guidelines} .
+      public_warning: >
+        Ta kolekcja jest oznaczona jako publiczna. Wszystkie umieszczone w niej zdjęcia
+        będą widoczne w profilu publicznym.
+      unsorted_warning: >
+        Ponieważ ten filtr dotyczy zdjęć, a nie kolekcji, wszystkie dodane tu zdjęcia
+        zostaną dodane do nieposortowanych.
+      edit_mode:
+        button: "Wybór wielu"
+        change_collections: "Dodaj do kolekcji"
+        collection_note: >
+          Zdjęcia nie zostaną usunięte z kolekcji jeśli w trybie zarządzania nie odznaczysz
+          wybranej kolekcji.
+        delete: "Usuń"
+        reprocess: "Ponowna obróbka"
+      form:
+        general: "Szczegóły"
+        collections: "Do jakich kolekcji należy to zdjęcie?"
+        settings: "Ustawienia"
+        comments: "Komentarze"
+        threads: "Jakiego zakresu komentarzy oczekujesz?"
+        threads_hint: >
+          Możesz określić do %{n} tematów do komentarzy/dyskusji nad tym zdjęciem.
+          Na Photographer.io chcemy promować sensowne komentarze, proponuj więc tematy
+          w rodzaju "Jakiego gatunku jest ten ptak?" lub "Konstruktywna krytyka".
+          Domyślnie komentarze są widoczne tylko dla ciebie i komentującego, ale możesz
+          je upublicznić jeśli uważasz, że są warte przeczytania; możesz to zrobić
+          przez publiczny widok zdjęcia.
+      create:
+        failed: "Błąd podczas wysyłania"
+      update:
+        succeeded: "Twoje zmiany zostały zapisane!"
+        failed: "Wystąpił problem podczas zapisywania zdjęcia. Poczytaj o tych błędach poniżej."
+      mass_update:
+        no_photos_selected: "Nie zaznaczono żadnych zdjęć."
+        failed: "Wystąpił błąd podczas próby aktualizacji zdjęć"
+        collections:
+          succeeded: "Kolekcje zdjęć zostały zaktualizowane."
+        delete:
+          succeeded: "Udało się usunąć zdjęcia."
+        reprocess:
+          succeeded: "Zdjęcia czekają na ponowną obróbkę."
+      destroy:
+        succeeded: "Twoje zdjęcie zostało usunięte."
+        failed: "Pojawił się problem z usunięciem tego zdjęcia."
+      guidelines:
+        link: "zalecenia w sprawie zdjęć"
+        title: "Zalecenia w sprawie zdjęć"
+        body: "Oto ogólne wskazówki dotyczące wysyłania zdjęć w serwisie Photographer.io. \nIch przestrzeganie pozwoli ci mieć poczucie, że twoje zdjęcia prezentują się\nnajlepiej, jak to tylko możliwe!\n\n* Obecnie jedynym obsługiwanym formatem\
+          \ jest JPEG/JPG.\n* Zapisując w formacie JPG używaj najwyższej dostępnej jakości, ponieważ jakość zdjęć jest przez nas dostosowywana automatycznie.\n* Zalecamy wysyłanie zdjęć o rozmiarze dłuższego z boków co najmniej 2000 pikseli. Dzięki\
+          \ temu zdjęcia nie będą przeskalowywane.\n* Największy rozmiar zdjęcia dostępny publicznie w tym serwisie to 2000 pikseli i taki rozmiar jest używany dla zdjęć na stronie głównej. Wkrótce pojawi się możliwość zabezpieczania zdjęć przed\
+          \ wyświetlaniem ich tam.\n* Na stronach zawierających pojedyncze zdjęcia rozmiar dłuższego z boków wynosi maksymalnie 1500 pikseli.\n* Możesz wysyłać zdjęcia JPG w pełnym rozmiarze dostępnym w aparacie; limity wysyłania dotyczą ilości\
+          \ zdjęć, a nie ich wielkości. Zalecamy jednak używanie nieco mniejszych kopii, aby skrócić czas przesyłania i obróbki.\n* Pierwotne wysłane zdjęcie nie jest dostępne dla nikogo poza tobą, na potrzeby serwisu generujemy mniejsze, zoptymalizowane\
+          \ kopie.\n"
+  collections:
+    caption: "%{user} zaktualizował kolekcję %{collection}"
+  collection_photographs:
+    user_must_match: "Nie możesz dodawać zdjęć do tej kolekcji."
+  comments:
+    saving: "Zapisywanie..."
+    unpublished: "Widoczne tylko dla komentującego i właściciela zdjęcia"
+    child_unpublished: "Widoczne tylko dla komentującego, właściciela zdjęcia oraz autorów poprzednich komentarzy w tym wątku"
+    delete: "Usuń"
+    reply: "Odpowiedz"
+    publish: "Publikuj"
+    unpublish: "Wycofaj publikację"
+    none: >
+      Obecnie nie ma komentarzy w tym wątku. Bądź pierwszy i napisz swój komentarz
+      za pomocą formularza widocznego powyżej!
+    none_visible: >
+      Obecnie brak tutaj publicznie widocznych komentarzy. Jeśli jesteś ciekawy, dowiedz
+      się więcej na temat komentowania w serwisie Photographer.io.
+    notifications:
+      subject: "%{user} napisał nowy komentarz do zdjęcia '%{on}'"
+      body: "Użytkownik %{user} napisał nowy komentarz do twojego zdjęcia '%{on}'. Komentarz ten nie będzie domyślnie widoczny, możesz to zmienić odwiedzając publiczny widok zdjęcia. \n"
+      reply:
+        subject: "%{user} odpowiedział na twój komentarz do zdjęcia '%{on}'"
+        body: >
+          %{user} odpowiedział na twój komentarz do zdjęcia '%{on}'
+      published:
+        subject: "Twój komentarz do zdjęcia '%{on}' został opublikowany"
+  favourites:
+    notifications:
+      subject: "Użytkownik %{user} oznaczył zdjęcie '%{photo}' jako ulubione"
+    create:
+      succeeded: "Zdjęcie zostało dodane do ulubionych!"
+      failed: "Nie udało się dodać tego zdjęcia do ulubionych."
+    destroy:
+      succeeded: "Usunięto z ulubionych!"
+      failed: "Nie udało się usunąć zdjęcia z ulubionych."
+  followings:
+    follow: "Obserwuj"
+    unfollow: "Przestań obserwować"
+    create:
+      succeeded: "Od tej pory obserwujesz użytkownika %{name}!"
+      failed: "Wystąpił problem ze śledzeniem użytkownika. Skontaktuj się ze wsparciem technicznym."
+    destroy:
+      succeeded: "Śledzenie tego użytkownika zakończone."
+      failed: "Wystąpił problem z zakończeniem śledzenia tego użytkownika."
+    notifications:
+      subject: "Użytkownik %{user} zaczął cię obserwować"
+  notifications:
+    title: "Powiadomienia"
+    none: "W tej chwili nie masz żadnych powiadomień."
+    mark_as_read: "Zaznacz wszystko jako przeczytane"
+    email:
+      subject: "Photographer.io: %{subject}"
+      button: "Zobacz w serwisie Photographer.io"
+      body: >
+        To jest automatycznie wysłany e-mail z powiadomieniem na poniższy temat:
+  photographs:
+    title: "%{title}, użytkownik: %{by}"
+    user_quota_exceeded: >
+      Niestety, na ten miesiąc limit wysłanych zdjęć został już przez ciebie wykorzystany
+      :(
+    none: "Brak zdjęć!"
+    no_results: "Brak odpowiedzi na twoje zapytanie."
+    collections: "Zdjęcie w kolekcjach"
+    interactions_hint: >
+      Aby zmniejszyć bałagan na stronie, przyciski rekomendowania i dodawania do ulubionych
+      zostały usunięte z paska bocznego i pojawiają się dopiero po najechaniu wskaźnikiem
+      nad zdjęcie.
+    share:
+      title: "Podziel się"
+      blurb: >
+        Podziel się tym zdjęciem podając następujący adres:
+    edit: "Edytuj to zdjęcie"
+    location: "Miejsce"
+    recommend: "Poleć to zdjęcie"
+    recommended: "Polecone!"
+    favourite: "Dodaj do ulubionych"
+    unfavourite: "Usuń z ulubionych"
+    stats: "Statystyki"
+    views: "Odwiedziny"
+    favourites: "Ulubione"
+    caption: "%{photo}, użytkownik: %{user}"
+    sub_nav:
+      filter: "Filtr:"
+      grouped: "według kolekcji"
+      all: "wszystkie"
+    metadata:
+      title: "Szczegóły zdjęcia"
+      details: "Szczegóły"
+      keywords: "Słowa kluczowe"
+      camera: "Aparat"
+      image: "Zdjęcie"
+      settings: "Ustawienia"
+      model: "Model"
+      lens_type: "Obiektyw"
+      aperture: "Przesłona"
+      focal_length: "Ogniskowa"
+      shutter_speed: "Czas naświetlania"
+      fov: "Kąt widzenia"
+      iso: "ISO"
+      copyright_notice: "Prawa autorskie"
+      rights: "Prawa"
+      creator: "Autor"
+      creator_city: "Miejscowość"
+      creator_country: "Kraj"
+      date_time_original: "Data wykonania"
+      lat: "Szerokość geograficzna"
+      lng: "Długość geograficzna"
+      license: "Licencja"
+      default_license: "Wszelkie prawa zastrzeżone"
+    creator:
+      profile: "Pokaż profil"
+      photos: "Zobacz więcej zdjęć"
+  recommendations:
+    user_quota_exceeded: "Wykorzystałeś cały limit rekomendacji na dziś!"
+    quota: "Dziś możesz polecić jeszcze %{amount} zdjęć!"
+  users:
+    avatar: "Awatar"
+    visit_site: "Odwiedź stronę"
+    username_format: "Tylko litery, cyfry i znaki podkreślenia."
+    old_username_present: >
+      Ta nazwa użytkownika była już użyta w przeszłości przez kogoś innego. Obsługujemy
+      przekierowania ze starych nazw przez ograniczony czas. Jeśli masz pytania na
+      temat tej nazwy lub procesu, skontaktuj się z nami na adres <a href="mailto:support@photographer.io">support@photographer.io</a>.
+    username_quota_exceeded: "Nie możesz już zmienić swojej nazwy użytkownika. Potrzebujesz pomocy? Skontaktuj się z nami na adres \n<a href=\"mailto:support@photographer.io\">support@photographer.io</a>.\n"
+    username_quota: "Możesz zmienić swoją nazwę użytkownika jeszcze %{n} raz(y)"
+    invitations:
+      invited:
+        title: "Zaproszeni znajomi"
+        email: "Adres e-mail"
+        status: "Stan"
+        confirmed: "Zaakceptowano!"
+        unconfirmed: "Jak dotąd nie zostało zaakceptowane"
+        none: |
+          Jeszcze nikogo nie zaprosiłeś! Zacznij to robić wypełniając formularz po prawej.
+      new:
+        title: "Zaproś swoich znajomych"
+        invite: "Wyślij zaproszenie"
+        limit: >
+          Obecnie, póki system jest nowy, istnieje limit %{n} zaproszeń na użytkownika.
+          Prawdopodobnie będzie on zmieniony lub usunięty w przyszłości, w zależności
+          od wykorzystania.
+        spiel:
+          title: "Przyprowadź tu swoich znajomych i otrzymuj nagrody!"
+          body: "Podoba ci się Photographer.io? Dziel się miłością \ni zaproś swoich znajomych, aby też do nas dołączyli!\n\nZa każdego sprowadzonego znajomego \notrzymasz %{referral_bonus} dodatkowych zdjęć do wysłania na miesiąc.\n"
+      edit:
+        title: "Załóż konto"
+        accept: "Zaakceptuj zaproszenie i utwórz konto"
+        spiel:
+          title: "Zaakceptuj zaproszenie i dołącz do nas!"
+          body: "Jako niepłacący członek Photographer.io możesz:\n\n* Wysyłać do %{uploads} zdjęć na miesiąc\n* Tworzyć nieograniczone kolekcje zdjęć\n* Śledzić aktualizacje innych użytkowników\n* Oznaczać zdjęcia jako ulubione\n* Promować ulubione\
+            \ zdjęcia za pomocą systemu rekomendacji\n* Komentować i krytykować zdjęcia\n\nChcesz nieograniczonego wysyłania, mieć więcej funkcji i wesprzeć serwis?\nWkrótce pojawią się konta płatne!\n\nMasz pytania? [Napisz od nas!](mailto:support@photographer.io)\n\
+            \n##### Powołaj się na znajomych, aby zwiększyć limit wysyłania\nZa każdego znajomego, który założy konto, zarówno ty jak i znajomy \ndostaniecie powiększenie limitu wysyłania o %{referral_bonus} zdjęć\nna miesiąc. Instrukcje znajdziesz\
+            \ na stronie twojego konta po jego\nzałożeniu.\n"
+    sessions:
+      new:
+        title: "Zaloguj się na swoje konto"
+        sign_in: "Zaloguj się"
+        spiel:
+          title: "Witamy ponownie!"
+          body: "Jeśli już jesteś użytkownikiem tego serwisu, zaloguj się \nna swoje konto za pomocą formularza znajdującego się obok.\n\nJeszcze nie masz konta? [Zapisz się i dołącz do nas!](%{sign_up_path})\n"
+    new:
+      title: "Załóż konto w serwisie Photographer.io"
+      spiel:
+        title: "Dołącz do nas!"
+        body: "Jako niepłacący członek Photographer.io możesz:\n\n* Wysyłać do %{uploads} zdjęć na miesiąc\n* Tworzyć nieograniczone kolekcje zdjęć\n* Śledzić aktualizacje innych użytkowników\n* Oznaczać zdjęcia jako ulubione\n* Promować ulubione\
+          \ zdjęcia za pomocą systemu rekomendacji\n* Komentować i krytykować zdjęcia\n\nChcesz nieograniczonego wysyłania, więcej funkcji i wesprzeć serwis?\nWkrótce pojawią się konta płatne!\n\n##### Powołaj się na znajomych, aby zwiększyć limit\
+          \ wysyłania\nZa każdego znajomego, który założy konto, zarówno ty jak i znajomy \ndostaniecie powiększenie limitu wysyłania o %{referral_bonus} zdjęć\nna miesiąc. Instrukcje znajdziesz się na stronie twojego konta po jego\nzałożeniu.\n\
+          \n##### Ten serwis jest obecnie w fazie beta\nWkrótce opublikujemy nasze Warunki korzystania z serwisu. Do tego\nczasu wiedz, że nie ukradniemy twoich zdjęć i wszystko, co wysyłasz,\nmusi być twoje.\n\nMasz pytania? [Napisz od nas!](mailto:support@photographer.io)\n"
+  reports:
+    new:
+      button: "Zgłoś problem"
+    create:
+      succeeded: >
+        Utworzono zgłoszenie. To zdjęcie jest teraz ukryte przed publicznym przeglądaniem.
+      failed: >
+        Wystąpił problem ze zgłoszeniem. Opis błędów znajduje się poniżej.
+  stories:
+    notification: "%{text}"

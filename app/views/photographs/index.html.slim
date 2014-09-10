@@ -1,0 +1,43 @@
+- content_for(:pagination) do
+  - if @photographs.present? && @photographs.size > 0
+    = paginate @photographs
+
+section[id="photographs-index" itemscope itemtype="http://schema.org/ItemList"]
+  - if content_for?(:title)
+    == yield(:title)
+  - else
+    header class="row"
+      div class="large-12 columns"
+        h1= @title
+
+  section class="row"
+    div class="large-12 columns"
+      - if @photographs.present? && @photographs.size > 0
+        div class="row"
+          - if hide_filters?
+            div class="large-12 columns"
+              == yield(:pagination)
+
+          - else
+            div class="large-3 columns"
+              = render partial: "shared/filter_subnav"
+
+            div class="large-6 columns"
+              == yield(:pagination)
+
+            div class="large-3 columns"
+
+        div class="row"
+          div class="large-12 columns"
+            ul class="large-block-grid-5 small-block-grid-1 photo-grid"
+              - if content_for?(:grid_block)
+                == yield(:grid_block)
+
+              = render @photographs, cache: -> (p) { [I18n.locale, p, p.user] }
+
+        div class="row"
+          div class="large-12 columns"
+            == yield(:pagination)
+
+      - else
+        = t("photographs.none")

@@ -1,0 +1,37 @@
+- if @user.profile_background_photo.present?
+  - content_for(:body_class, "blur")
+  - content_for(:before_body) do
+    canvas id="blur" data-src=image_url(@user.profile_background_photo.thumbnail_image)
+
+- content_for(:title) do
+  header
+    -# Insert a blank header to prevent auto titling
+
+section id="users-show"
+  div class="row"
+    div class="large-12 columns"
+      header id="user-profile"
+        - if @user.avatar.present?
+          div class="avatar"
+            = link_to user_photographs_path(@user) do
+              = image_tag @user.avatar.thumb("250x250#").jpg.url, width: "250", height: "250", alt: t("users.avatar")
+
+        section id="user-panel"
+          h1 class="name"
+            = @user.name
+          - if @user.location.present?
+            h5 class="location"
+              = @user.location
+
+          - if @user.website_url.present?
+            h6 class="website"
+              = link_to t("users.visit_site"), @user.website_url, target: "_blank"
+      
+          = follow_user_button(@user, "small")
+
+        section id="user-biography"
+          = simple_format @user.biography
+        
+        .clear
+
+  = render file: "photographs/index"

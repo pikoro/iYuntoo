@@ -1,0 +1,55 @@
+- if comment.can_be_seen_by?(current_user)
+  article[id="comment-#{comment.id}" class="comment #{comment.published? ? 'published' : 'unpublished'}" itemprop="comment" itemscope itemtype="http://schema.org/Comment"]
+    div class="main"
+      - cache([I18n.locale, comment, comment.user, :avatar_and_body]) do
+        - if comment.user.avatar.present?
+          aside class="avatar"
+            = image_tag comment.user.avatar.thumb("50x50#").jpg.url, width: 50, height: 50, alt: ""
+
+        section class="body" itemprop="text"
+          = md comment.body
+
+        .clear
+
+      footer
+        div class="row"
+          div class="large-8 columns left"
+            - cache([I18n.locale, comment, comment.user, :author_and_status]) do
+              span class="author" itemprop="author"
+                = link_to comment.user.name, short_user_path(comment.user.username)
+
+              time datetime=(comment.created_at.utc) itemprop="datePublished"
+                = l comment.created_at, format: :long
+
+              - status_class = comment.published ? "hidden" : ""
+              div class="label secondary radius status #{status_class}"
+                - if comment.child?
+                  = t("comments.child_unpublished") 
+                - else
+                  = t("comments.unpublished")
+
+          div class="large-4 columns right"
+            div class="actions"
+              - if can? :moderate, comment
+                - button_class = comment.published ? "published success" : "unpublished secondary"
+                = link_to toggle_comment_thread_comment_path(comment.comment_thread, comment), class: "button small radius toggle #{button_class}", "data-remote" => true do
+                  span class="published"
+                    = t("comments.unpublish")
+                  span class="unpublished"
+                    = t("comments.publish")
+
+              - if user_signed_in? && current_user == comment.user
+                = link_to t("comments.delete"), comment_thread_comment_path(comment.comment_thread, comment), method: :delete, class: "button small alert radius"
+
+              - if user_signed_in?
+                = link_to t("comments.reply"), "#", class: "button small radius", "data-toggle-reply" => true
+
+      .clear
+
+    div class="replies comment-thread"
+      div[class="reply" data-reply]
+        - cache([I18n.locale, comment, :form]) do
+          = render partial: "comments/form", locals: { comment: comment.comment_thread.comments.new(parent_id: comment.id) }
+
+      div class="comments"
+        = render comment.children.order("created_at DESC").includes(:children, :user)

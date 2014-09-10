@@ -1,0 +1,12 @@
+= simple_form_for [:account, collection] do |f|
+  fieldset class="panel"
+    legend= t("account.collections.form.general")
+
+    = f.input :name
+    = f.input :description
+    = f.input :visible, as: :radio_buttons
+
+  = f.button :submit
+
+  - if collection.persisted?
+    = link_to t("account.collections.delete"), account_collection_path(collection), method: :delete, data: { confirm: t("confirm_delete") }, class: "button small alert delete"

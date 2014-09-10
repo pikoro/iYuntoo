@@ -1,0 +1,29 @@
+- content_for(:body_class, "darkroom")
+
+section id="pages-home"
+  article id="hero-photograph"
+    - if @photograph.present?
+      = link_to photograph_path(@photograph) do
+        - if @photograph.has_precalculated_sizes?
+          = photo_tag @photograph, :homepage
+        - else
+          - if photo.landscape?
+            = photo_tag @photograph, "2000x", quality: 80
+          - else
+            = photo_tag @photograph, "2000x1400#", quality: 80
+    
+      div id="hero-blurb"
+        header
+          h2= t("home.title")
+          h4= simple_format t("home.blurb", \
+            name: link_to(@photograph.user.name, short_user_path(@photograph.user.username)), image_path: photograph_path(@photograph),
+            word: t("home.words").sample)
+
+          - unless user_signed_in?
+            div class="buttons"
+              = link_to t("home.about"), about_path, class: "button small"
+
+              span class="or"
+                = t("home.or")
+
+              = link_to t("home.sign_up"), new_user_registration_path, class: "button success small"

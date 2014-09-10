@@ -1,0 +1,46 @@
+- cache(:sitemap, expires_in: 15.minutes) do
+  - base_url = "https://www.photographer.io"
+  doctype xml
+
+  urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    url
+      loc== base_url
+      lastmod= w3c_date(Time.now)
+      changefreq= "always"
+
+    url
+      loc== [base_url, explore_photographs_path].join
+      lastmod= w3c_date(@photographs.last.updated_at)
+      changefreq= "always"
+
+    url
+      loc== [base_url, recommended_photographs_path].join
+      lastmod= w3c_date(Time.now)
+      changefreq= "always"
+
+    - @photographs.find_each do |photo|
+      url
+        loc== [base_url, photograph_path(photo)].join
+        lastmod= w3c_date(photo.updated_at)
+        changefreq= "hourly"
+        priority= "1"
+
+    url
+      loc== [base_url, explore_collections_path].join
+      lastmod= w3c_date(@collections.last.updated_at)
+      changefreq= "always"
+
+    - @collections.find_each do |collection|
+      url
+        loc== [base_url, collection_path(collection)].join
+        lastmod= w3c_date(collection.updated_at)
+        changefreq= "daily"
+        priority= "1"
+
+    - cache([:sitemap, :categories], expires_in: 1.day) do
+      - @categories.each do |category|
+        url
+          loc== [base_url, category_path(category.slug)].join
+          lastmod= w3c_date(Time.now)
+          changefreq= "daily"
+          priority="1"

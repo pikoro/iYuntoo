@@ -1,0 +1,124 @@
+- content_for(:body_extras) do
+  | itemscope itemtype="http://schema.org/Photograph"
+
+- content_for(:meta) do
+  - cache([I18n.locale, @photograph, :meta]) do
+    -# OpenGraph
+    meta property="og:type" content="website"
+    meta property="og:image" content=image_url(@photograph.large_image)
+    meta property="og:image:type" content="image/jpeg"
+    meta property="og:url" content=photograph_url(@photograph, host: ENV['DOMAIN'])
+
+    - if @photograph.metadata.title.present?
+      meta property="og:title" content=(@photograph.metadata.title)
+    - else
+      meta property="og:title" content=t("untitled")
+
+    - if @photograph.metadata.description.present?
+      meta property="og:description" content=(@photograph.metadata.description)
+
+    -# Twitter
+    meta name="twitter:card" content="photo"
+    meta name="twitter:image" content=image_url(@photograph.large_image)
+    meta name="twitter:url" content=photograph_url(@photograph, host: ENV['DOMAIN'])
+
+    - if @photograph.metadata.title.present?
+      meta name="twitter:title" content=(@photograph.metadata.title)
+    - else
+      meta name="twitter:title" content=""
+
+    - if @photograph.metadata.description.present?
+      meta name="twitter:description" content=(truncate(@photograph.metadata.description, length: 200))
+
+section id="photographs-show"
+  section class="row"
+    article class="large-9 small-12 columns"
+      section class="display"
+        = hidden_image_meta_tag(@photograph.large_image)
+
+        div class="image"
+          - if @photograph.has_precalculated_sizes?
+            = photo_tag @photograph, :large
+          - else
+            - if @photograph.landscape?
+              = photo_tag @photograph, "1500x"
+            - elsif @photograph.portrait?
+              = photo_tag @photograph, "x1000"
+            - else
+              = photo_tag @photograph, "1500x1500>"
+
+          - unless sharing_mode
+            = interactions_for @photograph
+
+          - cache([I18n.locale, @photograph, @photograph.metadata, :description]) do
+            - if @photograph.metadata.has_text?
+              aside class="description"
+                h4 itemprop="name"
+                  = @photograph.metadata.title
+
+                - if @photograph.metadata.description.present?
+                  div itemprop="description"
+                    = md @photograph.metadata.description
+
+              div class="clear"
+
+        - if @photograph.comments_enabled? && !sharing_mode
+          = render @photograph.comment_threads
+
+    aside id="photographs-sidebar" class="large-3 small-12 columns"
+      - unless sharing_mode
+        - if user_signed_in? && current_user == @photograph.user
+          = link_to t("photographs.edit"), edit_account_photograph_path(@photograph), class: "button secondary expand"
+
+        - if user_signed_in? && current_user.moderator?
+          = link_to t("reports.new.button"), new_photograph_report_path(@photograph), class: "button alert expand"
+
+      = creator_details_for @photograph
+
+      div class="panel share"
+        h5= t("photographs.share.title")
+
+        div class="share-url"
+          label for="share-url"
+            = t("photographs.share.blurb")
+          input id="share-url" type="text" value=(short_photo_url(@photograph, protocol: "https"))
+
+          - unless user_signed_in? && !current_user.show_social_buttons
+            = render partial: "shared/social_buttons"
+
+      div class="show-for-touch"
+        = interactions_for @photograph
+      
+      - cache([I18n.locale, @photograph, @metadata, :sidebar], expires_in: 5.minutes) do
+        div class="panel"
+          = metadata_table_for @photograph, format: :short
+
+        - if @photograph.collections.visible.count > 0
+          div class="panel"
+            h5= t("photographs.collections")
+            table class="collections"
+              tbody
+                - @photograph.collections.visible.each do |collection|
+                  tr
+                    td
+                      h6= link_to collection.name, collection_path(collection)
+                      div class="photo-strip"
+                        - collection.photographs.view_for(current_user).uniq.limit(6).each do |photo|
+                          = link_to photograph_path(photo) do
+                            = photo_tag photo, :small
+
+        - if @photograph.metadata.keywords.size > 0
+          div class="panel"
+            h5= t("photographs.metadata.keywords")
+            ul id="photographs-keywords" class="inline-list"
+              - @photograph.metadata.keywords.each do |keyword|
+                li
+                  = link_to search_photographs_path(keyword: keyword) do
+                    span class="label radius"
+                      = keyword
+
+        - if @photograph.show_location_data && @photograph.metadata.has_location_data?
+          div class="panel"
+            h5= t("photographs.location")
+            = render partial: "map", locals: { photograph: @photograph }
+
